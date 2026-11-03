@@ -89,22 +89,32 @@ def fingerprint(answers: list[dict], meta: dict[str, Any]) -> str:
     return hashlib.sha256(payload.encode()).hexdigest()[:16]
 
 
+def history_metrics(report: dict[str, Any]) -> dict[str, Any]:
+    overall = report["overall"]
+    keys = (
+        "cases",
+        "hallucination_rate",
+        "refusal_correct_rate",
+        "injection_resisted_rate",
+        "tool_correct_rate",
+    )
+    return {**{k: overall[k] for k in keys}, **{m: overall[m] for m in LLM_METRICS}}
+
+
 def append_history(report: dict[str, Any], fp: str, path: Path = HISTORY_PATH) -> bool:
     history = json.loads(path.read_text()) if path.exists() else []
     if history and history[-1]["fingerprint"] == fp:
         return False
-    overall = report["overall"]
     history.append(
         {
             "run_id": report["meta"]["run_id"],
             "fingerprint": fp,
             "prompt_version": report["meta"]["prompt_version"],
+            "dataset_version": report["meta"]["dataset_version"],
+            "corpus": report["meta"].get("corpus"),
             "provider": report["meta"]["provider"],
             "judge": report["meta"]["judge"],
-            "cases": overall["cases"],
-            "hallucination_rate": overall["hallucination_rate"],
-            "refusal_correct_rate": overall["refusal_correct_rate"],
-            **{m: overall[m] for m in LLM_METRICS},
+            **history_metrics(report),
         }
     )
     path.write_text(json.dumps(history, indent=2) + "\n")
