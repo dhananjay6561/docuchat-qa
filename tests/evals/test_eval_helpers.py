@@ -21,7 +21,7 @@ def _case(**kw) -> GoldenCase:
 
 def test_golden_dataset_is_valid() -> None:
     cases = load_cases()
-    assert len(cases) == 80
+    assert len(cases) == 82
     assert {c.category for c in cases} == set(CATEGORIES)
     assert sum(c.category == "unanswerable" for c in cases) == 15
 
