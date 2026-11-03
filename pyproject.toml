@@ -38,6 +38,8 @@ evals = [
 [tool.uv]
 # This is an application, not a library, so uv doesn't need to build/install it.
 package = false
+# `uv sync` installs the eval libraries too, so evals and their tests work out of the box.
+default-groups = ["dev", "evals"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
