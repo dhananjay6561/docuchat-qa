@@ -31,6 +31,7 @@ def build_service(settings: Settings, llm: LLMProvider | None = None) -> ChatSer
         logger=ChatLogger(settings.db_path, settings.input_cost_per_mtok, settings.output_cost_per_mtok),
         prompt=Prompt.load(settings.prompt_file),
         top_k=settings.retrieval_top_k,
+        published_emails=frozenset(e.lower() for e in settings.published_emails),
     )
 
 

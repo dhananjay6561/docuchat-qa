@@ -10,6 +10,7 @@ import yaml
 from app.llm.base import LLMProvider, Message
 from app.logging_db import ChatLogger, ChatRecord
 from app.memory import SessionMemory
+from app.pii import redact_answer
 from app.rag.retriever import Hit, Retriever
 from app.schemas import ChatResponse, Source
 from app.tools.orders import OrderTool
@@ -60,6 +61,7 @@ class ChatService:
         logger: ChatLogger,
         prompt: Prompt,
         top_k: int,
+        published_emails: frozenset[str] = frozenset(),
     ) -> None:
         self.llm = llm
         self.retriever = retriever
@@ -68,6 +70,7 @@ class ChatService:
         self.logger = logger
         self.prompt = prompt
         self.top_k = top_k
+        self.published_emails = published_emails
 
     def chat(self, session_id: str, message: str) -> ChatResponse:
         return self.chat_with_trace(session_id, message).response
@@ -77,8 +80,10 @@ class ChatService:
         hits = self.retriever.search(self._retrieval_query(session_id, message), self.top_k)
         conversation = [*self.memory.history(session_id), Message("user", self._user_turn(message, hits))]
 
-        answer, tool_events, input_tokens, output_tokens = self._run_llm(conversation)
+        raw_answer, tool_events, input_tokens, output_tokens = self._run_llm(conversation)
         tool_names = [e.name for e in tool_events]
+        # Guardrail runs before anything else sees the answer (user, memory, log).
+        answer, _ = redact_answer(raw_answer, self.published_emails)
 
         refused = REFUSAL_MARKER in answer.lower() or answer == PROVIDER_DECLINED
         sources = [] if refused else self._cited_sources(answer, hits)

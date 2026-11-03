@@ -32,6 +32,9 @@ class Settings(BaseSettings):
     tool_failure_mode: Literal["none", "timeout", "error"] = "none"
     tool_timeout_seconds: float = 2.0
 
+    # Contact details the business publishes on purpose; the output guardrail keeps only these.
+    published_emails: frozenset[str] = frozenset({"support@lumenhome.example"})
+
     max_history_turns: int = 6
     db_path: Path = ROOT_DIR / "docuchat.db"
 

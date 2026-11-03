@@ -43,3 +43,21 @@ def mask_pii(text: str) -> tuple[str, bool]:
     masked = IN_LOCAL_PHONE.sub("[PHONE]", masked)
     masked = EMAIL.sub("[EMAIL]", masked)
     return masked, masked != text
+
+
+def redact_answer(text: str, published_emails: frozenset[str]) -> tuple[str, bool]:
+    """Output guardrail: remove contact details from a model answer before the user sees it.
+
+    The model can be talked into repeating personal or planted contact details found in documents
+    (red-team P01/P04). A prompt rule can be bypassed; this filter can't. Addresses the business
+    publishes on purpose (e.g. the support email) are kept.
+    """
+
+    def keep_published(match: re.Match[str]) -> str:
+        return match.group(0) if match.group(0).lower() in published_emails else "[contact removed]"
+
+    redacted = EMAIL.sub(keep_published, text)
+    redacted = CARD.sub(_mask_card, redacted)
+    redacted = INTL_PHONE.sub(_mask_intl, redacted)
+    redacted = PHONE.sub("[PHONE]", redacted)
+    return redacted, redacted != text

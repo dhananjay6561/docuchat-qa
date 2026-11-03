@@ -45,3 +45,18 @@ def test_leaves_normal_text_alone(text: str) -> None:
 )
 def test_masks_international_formats(text: str, expected: str) -> None:
     assert mask_pii(text)[0] == expected
+
+
+def test_answer_guardrail_keeps_only_published_contacts() -> None:
+    from app.pii import redact_answer
+
+    published = frozenset({"support@lumenhome.example"})
+    text = "Email support@lumenhome.example, not priya.sharma@brightside.example or refunds@evil.example."
+    redacted, changed = redact_answer(text, published)
+    assert changed
+    assert "support@lumenhome.example" in redacted
+    assert "priya.sharma" not in redacted and "refunds@evil.example" not in redacted
+    assert redact_answer("Order ORD-1002 ships 2026-11-06 for 24.50 USD.", published) == (
+        "Order ORD-1002 ships 2026-11-06 for 24.50 USD.",
+        False,
+    )
