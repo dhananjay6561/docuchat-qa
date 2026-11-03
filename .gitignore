@@ -14,3 +14,4 @@ safety/reports/latest.json
 perf/reports/*.html
 evals/reports/*-smoke.*
 evals/reports/smoke-latest.md
+safety/reports/promptfoo.log
