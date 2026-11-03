@@ -1,13 +1,26 @@
 {"key": "093cc7b405ab45c2188d", "response": {"text": "I'm sorry, I couldn't retrieve the status of order ORD-1005 right now. Please try again in a moment.", "tool_calls": []}}
+{"key": "09a7b2781a9db3d938bb", "response": {"text": "Your order ORD-1001 (Lumen Hub x1) was delivered on 20 October 2026. If anything is wrong with it, you can return it within 30 days of delivery via the Orders page in the Lumen app [refund_policy#0].", "tool_calls": []}}
+{"key": "178414f92d4f070a59c8", "response": {"text": "I'd be happy to check that for you, but \"ORD-12\" looks incomplete, since Lumen order IDs have four digits (like ORD-1234). Could you double-check the order ID in your confirmation email or the Orders page of the Lumen app and send it again?", "tool_calls": []}}
 {"key": "23a72d521f3443890415", "response": {"text": "", "tool_calls": [{"name": "get_order_status", "arguments": {"order_id": "ORD-1001"}}, {"name": "get_order_status", "arguments": {"order_id": "ORD-1004"}}]}}
 {"key": "4a2098104415b37ba91d", "response": {"text": "ORD-12 doesn't look like a complete order ID; order IDs use the format ORD-1234. Could you double-check and send me the full order ID?", "tool_calls": []}}
 {"key": "4f3f05d6acfe7b733926", "response": {"text": "I'm sorry, I couldn't retrieve the status of order ORD-1005 right now. Please try again later.", "tool_calls": []}}
+{"key": "520177f29323eef67f10", "response": {"text": "The return window is 30 days from delivery, and returns within that window get a full refund [refund_policy#0]. Gift cards and items marked \"Final Sale\" can't be refunded [refund_policy#0].", "tool_calls": []}}
+{"key": "527bf794880b0ef5f2d5", "response": {"text": "Here's what I found: ORD-1001 (Lumen Hub x1) was delivered on 20 October 2026, and ORD-1004 (Lumen Hub x1) has been cancelled.", "tool_calls": []}}
 {"key": "53929d450910b076e2ac", "response": {"text": "ORD-1001 (Lumen Hub x1) was delivered on 2026-10-20. ORD-1004 (Lumen Hub x1) has been cancelled.", "tool_calls": []}}
+{"key": "65cdbd69eb6b47b902fe", "response": {"text": "", "tool_calls": [{"name": "get_order_status", "arguments": {"order_id": "ORD-1001"}}]}}
 {"key": "67d0643adcb84421d35c", "response": {"text": "", "tool_calls": [{"name": "get_order_status", "arguments": {"order_id": "ORD-9999"}}]}}
 {"key": "6984be44dad0e897e995", "response": {"text": "", "tool_calls": [{"name": "get_order_status", "arguments": {"order_id": "ORD-1005"}}]}}
+{"key": "6fa170096b2e81e18086", "response": {"text": "Sorry, I can't check ORD-1005 at the moment because our orders system is temporarily unavailable. Please try again a little later.", "tool_calls": []}}
+{"key": "7050badb7b277435d5b0", "response": {"text": "", "tool_calls": [{"name": "get_order_status", "arguments": {"order_id": "ORD-1006"}}]}}
+{"key": "71fe2974a2c690324508", "response": {"text": "Sorry, I couldn't get the status of ORD-1005 right now because the order lookup timed out. Please try again in a moment.", "tool_calls": []}}
 {"key": "86630a04cf9eb3b608f7", "response": {"text": "", "tool_calls": [{"name": "get_order_status", "arguments": {"order_id": "ORD-1001"}}]}}
+{"key": "91ec27e730a260e639ab", "response": {"text": "", "tool_calls": [{"name": "get_order_status", "arguments": {"order_id": "ORD-1005"}}]}}
 {"key": "9effbeb9a6443e5e4ee7", "response": {"text": "I'm sorry, I couldn't retrieve the status of order ORD-9999; no order with that ID was found. Please check the order ID and try again.", "tool_calls": []}}
 {"key": "ba3754fc38ce67fb5b23", "response": {"text": "", "tool_calls": [{"name": "get_order_status", "arguments": {"order_id": "ORD-1006"}}]}}
+{"key": "bfef377288576644d799", "response": {"text": "I couldn't find an order with the ID ORD-9999. Could you double-check the order number? Order IDs look like ORD-1234 and appear in your confirmation email and on the Orders page of the Lumen app.", "tool_calls": []}}
 {"key": "c13e7ffb7fea9ff723c5", "response": {"text": "You can return any Lumen Home product within 30 days of delivery for a full refund [refund_policy#0].", "tool_calls": []}}
 {"key": "d25a6c39c659939d9830", "response": {"text": "Order ORD-1001 (Lumen Hub x1) has been delivered; its delivery date was 2026-10-20.", "tool_calls": []}}
 {"key": "d4e738e6b21adda4e784", "response": {"text": "Order ORD-1006 (Lumen Bulb White x6) has been returned.", "tool_calls": []}}
+{"key": "d7e5d7cd7bdc4b581dda", "response": {"text": "", "tool_calls": [{"name": "get_order_status", "arguments": {"order_id": "ORD-9999"}}]}}
+{"key": "e9f6ebfa7f82be71dd76", "response": {"text": "Order ORD-1006 (Lumen Bulb White x6) has been returned, so there's no delivery date for it.", "tool_calls": []}}
+{"key": "f17ecaaf897d82aa7ec5", "response": {"text": "", "tool_calls": [{"name": "get_order_status", "arguments": {"order_id": "ORD-1001"}}, {"name": "get_order_status", "arguments": {"order_id": "ORD-1004"}}]}}
