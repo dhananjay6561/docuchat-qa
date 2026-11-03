@@ -10,9 +10,13 @@ import json
 from pathlib import Path
 from typing import Any
 
+from app.llm.base import LLMUnavailableError
 
-class CassetteMiss(LookupError):
-    """No recorded response for this request yet; it has been added to the pending file."""
+
+class CassetteMiss(LLMUnavailableError):
+    """No recorded response for this request yet; it has been added to the pending file.
+
+    Subclasses LLMUnavailableError so the HTTP API answers 503, as it would for a live outage."""
 
 
 def request_key(payload: Any) -> str:
