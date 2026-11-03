@@ -7,7 +7,9 @@ citation, refuse when the context doesn't cover the question, and call the order
 
 import json
 import math
+import random
 import re
+import time
 
 from app.llm.base import LLMProvider, LLMResponse, Message, ToolCall, ToolSpec
 from app.rag.text import tokenize
@@ -21,11 +23,18 @@ SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+|\n+")
 class MockProvider(LLMProvider):
     name = "mock"
 
+    def __init__(self, latency_ms: int = 0) -> None:
+        # Load tests set a latency so the app is measured while waiting on a "slow model", not
+        # answering instantly. Randomised +/-50% so requests don't move in lockstep.
+        self.latency_ms = latency_ms
+
     def complete(self, system: str, messages: list[Message], tools: list[ToolSpec]) -> LLMResponse:
+        if self.latency_ms:
+            time.sleep(self.latency_ms * random.uniform(0.5, 1.5) / 1000)
         last = messages[-1]
         if last.role == "tool":
             text = self._answer_from_tool(last.content)
-            return self._response(messages, text)
+            return self._response(system, messages, text)
 
         question = last.content.rsplit("Question:", 1)[-1].strip()
         order_match = ORDER_ID.search(question)
@@ -35,9 +44,9 @@ class MockProvider(LLMProvider):
                 name="get_order_status",
                 arguments={"order_id": order_match.group(0).upper()},
             )
-            return self._response(messages, "", [call])
+            return self._response(system, messages, "", [call])
 
-        return self._response(messages, self._answer_from_context(last.content, question))
+        return self._response(system, messages, self._answer_from_context(last.content, question))
 
     def _answer_from_context(self, user_turn: str, question: str) -> str:
         q_tokens = set(tokenize(question))
@@ -66,9 +75,12 @@ class MockProvider(LLMProvider):
         return f"Order {result['order_id']} is {result['status']}. Estimated delivery: {result['eta']}."
 
     @staticmethod
-    def _response(messages: list[Message], text: str, calls: list[ToolCall] | None = None) -> LLMResponse:
+    def _response(
+        system: str, messages: list[Message], text: str, calls: list[ToolCall] | None = None
+    ) -> LLMResponse:
         # Rough 4-chars-per-token estimate so cost/token columns are populated in mock mode too.
-        prompt_chars = sum(len(m.content) for m in messages)
+        # The system prompt is sent on every call, so it counts towards input tokens.
+        prompt_chars = len(system) + sum(len(m.content) for m in messages)
         return LLMResponse(
             text=text,
             tool_calls=calls or [],

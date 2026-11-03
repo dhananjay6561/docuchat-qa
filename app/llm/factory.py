@@ -10,7 +10,7 @@ from app.llm.recorded_provider import RecordedProvider
 
 def build_provider(settings: Settings) -> LLMProvider:
     if settings.llm_provider == "mock":
-        return MockProvider()
+        return MockProvider(latency_ms=settings.mock_latency_ms)
     if settings.llm_provider == "recorded":
         return RecordedProvider(Cassette(settings.cassette_path))
     return AnthropicProvider(

@@ -17,6 +17,8 @@ class Settings(BaseSettings):
     llm_model: str = "claude-opus-5-5"
     llm_effort: Literal["low", "medium", "high"] = "low"
     llm_max_tokens: int = 2048
+    # Mock provider only: simulated model latency for load tests (0 = answer instantly).
+    mock_latency_ms: int = 0
     # Used when llm_provider="recorded": responses replayed from this cassette file.
     cassette_path: Path = ROOT_DIR / "evals" / "cassettes" / "app.jsonl"
 
