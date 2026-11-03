@@ -1,0 +1,133 @@
+# Quality gate for DocuChat. Every job runs offline: LLM-dependent checks replay recorded responses
+# and UI/API/SQL checks use the mock model, so CI needs no API key and gives the same result every run.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 2 * * *" # nightly: full eval set
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  DEEPEVAL_TELEMETRY_OPT_OUT: "YES"
+  PROMPTFOO_DISABLE_TELEMETRY: "1"
+  PYTHON_VERSION: "3.11"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with: {python-version: "${{ env.PYTHON_VERSION }}", enable-cache: true}
+      - run: uv sync --frozen
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+
+  tests:
+    name: unit, api, data, conversations, tools, regression
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with: {python-version: "${{ env.PYTHON_VERSION }}", enable-cache: true}
+      - run: uv sync --frozen
+      - name: pytest (everything except browser tests; mobile tests skip without an emulator)
+        run: uv run pytest -m "not web" --alluredir=reports/allure-results --junitxml=reports/pytest-junit.xml
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: allure-results-tests, path: reports/allure-results}
+
+  web:
+    name: playwright
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with: {python-version: "${{ env.PYTHON_VERSION }}", enable-cache: true}
+      - run: uv sync --frozen
+      - run: uv run playwright install --with-deps chromium
+      - run: uv run pytest -m web --alluredir=reports/allure-results
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: allure-results-web, path: reports/allure-results}
+      - name: screenshots and traces of failing tests
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with: {name: playwright-traces, path: test-results}
+
+  newman:
+    name: postman collection (newman)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with: {python-version: "${{ env.PYTHON_VERSION }}", enable-cache: true}
+      - uses: actions/setup-node@v4
+        with: {node-version: "20"}
+      - run: uv sync --frozen
+      - run: ./scripts/run_newman.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: newman-junit, path: reports/newman-junit.xml}
+
+  evals:
+    name: llm evals (smoke on PRs, full on main/nightly)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with: {python-version: "${{ env.PYTHON_VERSION }}", enable-cache: true}
+      - run: uv sync --frozen
+      - name: run evals and enforce baseline (exit 1 = below baseline, 3 = recordings missing)
+        run: uv run python -m evals.run_eval --subset ${{ github.event_name == 'pull_request' && 'smoke' || 'full' }}
+      - name: add report to the job summary
+        if: always()
+        run: cat evals/reports/*latest.md >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: eval-reports, path: evals/reports}
+
+  redteam:
+    name: promptfoo red-team
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with: {python-version: "${{ env.PYTHON_VERSION }}", enable-cache: true}
+      - uses: actions/setup-node@v4
+        with: {node-version: "20"}
+      - run: uv sync --frozen
+      - name: run attacks (fails if any attack succeeds)
+        run: ./safety/run_redteam.sh
+      - name: add report to the job summary
+        if: always()
+        run: cat safety/reports/latest.md >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: redteam-report, path: "safety/reports/latest.*"}
+
+  allure-report:
+    name: allure report
+    needs: [tests, web]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with: {pattern: allure-results-*, path: allure-results, merge-multiple: true}
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: "21"}
+      - uses: actions/setup-node@v4
+        with: {node-version: "20"}
+      - run: npx -y allure-commandline generate allure-results -o allure-report --clean
+      - uses: actions/upload-artifact@v4
+        with: {name: allure-report, path: allure-report}
