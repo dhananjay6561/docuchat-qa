@@ -12,11 +12,13 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=ROOT_DIR / ".env", extra="ignore")
 
-    llm_provider: Literal["anthropic", "mock"] = "anthropic"
+    llm_provider: Literal["anthropic", "mock", "recorded"] = "anthropic"
     anthropic_api_key: str = ""
     llm_model: str = "claude-opus-5-5"
     llm_effort: Literal["low", "medium", "high"] = "low"
     llm_max_tokens: int = 2048
+    # Used when llm_provider="recorded": responses replayed from this cassette file.
+    cassette_path: Path = ROOT_DIR / "evals" / "cassettes" / "app.jsonl"
 
     # Pricing lives in config, not code, so cost estimates stay correct when the model changes.
     input_cost_per_mtok: float = 4.0
