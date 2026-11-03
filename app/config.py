@@ -35,6 +35,9 @@ class Settings(BaseSettings):
     # Contact details the business publishes on purpose; the output guardrail keeps only these.
     published_emails: frozenset[str] = frozenset({"support@lumenhome.example"})
 
+    # When set, POST /chat requires this value in the X-API-Key header. Empty = open (local dev, UI).
+    api_key: str = ""
+
     max_history_turns: int = 6
     db_path: Path = ROOT_DIR / "docuchat.db"
 

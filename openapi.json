@@ -55,6 +55,12 @@
               }
             }
           },
+          "400": {
+            "description": "Body could not be decoded (e.g. invalid UTF-8)"
+          },
+          "401": {
+            "description": "Missing or invalid API key (only when API_KEY is set)"
+          },
           "503": {
             "description": "LLM provider unavailable"
           },
@@ -68,7 +74,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
       }
     }
   },
@@ -248,6 +259,13 @@
           "type"
         ],
         "title": "ValidationError"
+      }
+    },
+    "securitySchemes": {
+      "APIKeyHeader": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-Key"
       }
     }
   }
