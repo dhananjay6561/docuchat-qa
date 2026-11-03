@@ -70,3 +70,12 @@ def test_summary_and_baseline_gate(tmp_path: Path) -> None:
     baseline = tmp_path / "baseline.yaml"
     baseline.write_text("thresholds:\n  faithfulness: {min: 0.8}\n  hallucination_rate: {max: 0.1}\n")
     assert len(check_baseline(overall, baseline)) == 2
+
+
+def test_hallucination_polarity_matches_deepeval_4() -> None:
+    from evals.deepeval_suite import is_hallucinated
+
+    assert is_hallucinated(refused=False, should_refuse=False, hallucination_score=1.0) is False  # agrees
+    assert is_hallucinated(refused=False, should_refuse=False, hallucination_score=0.0) is True  # disagrees
+    assert is_hallucinated(refused=False, should_refuse=True, hallucination_score=None) is True
+    assert is_hallucinated(refused=True, should_refuse=False, hallucination_score=None) is False

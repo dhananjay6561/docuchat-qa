@@ -27,8 +27,19 @@ from evals.metrics import (  # noqa: E402
     tool_correct,
 )
 
-# A hallucination score above this means the answer contradicts the reference documents.
+# DeepEval 4.x scores hallucination as the share of reference contexts the answer AGREES with
+# (higher is better; it passes when score >= threshold). Older versions used the opposite polarity,
+# so the direction is pinned here and covered by a unit test.
 HALLUCINATION_THRESHOLD = 0.5
+
+
+def is_hallucinated(refused: bool, should_refuse: bool, hallucination_score: float | None) -> bool:
+    """Answered something it should have refused, or disagreed with the reference documents."""
+    if refused:
+        return False
+    if should_refuse:
+        return True
+    return hallucination_score is not None and hallucination_score < HALLUCINATION_THRESHOLD
 
 
 def _metric_kwargs(judge: DeepEvalBaseLLM) -> dict[str, Any]:
@@ -96,10 +107,8 @@ def score_case(
             scores[name] = None
             complete = False
 
-    # Hallucinated = answered something it shouldn't have, or contradicted the reference docs.
-    hallucination = scores.get("hallucination")
-    scores["hallucinated"] = (not answer["refused"]) and (
-        case.should_refuse or (hallucination is not None and hallucination > HALLUCINATION_THRESHOLD)
+    scores["hallucinated"] = is_hallucinated(
+        answer["refused"], case.should_refuse, scores.get("hallucination")
     )
     return scores, complete
 
