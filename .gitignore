@@ -9,6 +9,6 @@ evals/cassettes/pending/
 tests/cassettes/pending/
 safety/cassettes/pending/
 safety/reports/latest.json
-test-results/
-reports/
+/test-results/
+/reports/
 perf/reports/*.html
