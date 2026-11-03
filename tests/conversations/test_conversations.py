@@ -11,6 +11,7 @@ SCRIPTS = yaml.safe_load((Path(__file__).parent / "scripts.yaml").read_text())["
 
 
 @pytest.mark.conversation
+@pytest.mark.llm
 @pytest.mark.parametrize("script", SCRIPTS, ids=[f"{s['id']}-{s['kind']}" for s in SCRIPTS])
 def test_conversation(script: dict, tmp_path: Path) -> None:
     service = recorded_service("conversations", tmp_path / "c.db", script.get("tool_failure_mode", "none"))

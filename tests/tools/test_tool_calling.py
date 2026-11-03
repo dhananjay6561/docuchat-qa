@@ -27,6 +27,7 @@ CASES = [
 
 
 @pytest.mark.tools
+@pytest.mark.llm
 @pytest.mark.parametrize(("name", "failure_mode", "message", "expect"), CASES, ids=[c[0] for c in CASES])
 def test_tool_calling(name: str, failure_mode: str, message: str, expect: dict, tmp_path: Path) -> None:
     service = recorded_service("tools", tmp_path / "t.db", failure_mode)

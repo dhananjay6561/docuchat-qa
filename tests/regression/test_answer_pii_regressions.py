@@ -16,6 +16,7 @@ CASES = yaml.safe_load((Path(__file__).parent / "cases.yaml").read_text())["answ
 
 
 @pytest.mark.regression
+@pytest.mark.llm
 @pytest.mark.parametrize("case", CASES, ids=[c["id"] for c in CASES])
 def test_answer_does_not_expose_contact_details(case: dict, tmp_path: Path) -> None:
     service = recorded_service("redteam", tmp_path / "r.db", cassette_dir=ROOT / "safety" / "cassettes")
