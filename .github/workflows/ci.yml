@@ -73,7 +73,7 @@ jobs:
       - uses: astral-sh/setup-uv@v6
         with: {python-version: "${{ env.PYTHON_VERSION }}", enable-cache: true}
       - uses: actions/setup-node@v4
-        with: {node-version: "20"}
+        with: {node-version: "22"}
       - run: uv sync --frozen
       - run: ./scripts/run_newman.sh
       - uses: actions/upload-artifact@v4
@@ -105,7 +105,7 @@ jobs:
       - uses: astral-sh/setup-uv@v6
         with: {python-version: "${{ env.PYTHON_VERSION }}", enable-cache: true}
       - uses: actions/setup-node@v4
-        with: {node-version: "20"}
+        with: {node-version: "22"}
       - run: uv sync --frozen
       - name: run attacks (fails if any attack succeeds)
         run: ./safety/run_redteam.sh
@@ -127,7 +127,7 @@ jobs:
       - uses: actions/setup-java@v4
         with: {distribution: temurin, java-version: "21"}
       - uses: actions/setup-node@v4
-        with: {node-version: "20"}
+        with: {node-version: "22"}
       - run: npx -y allure-commandline generate allure-results -o allure-report --clean
       - uses: actions/upload-artifact@v4
         with: {name: allure-report, path: allure-report}
