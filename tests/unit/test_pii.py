@@ -1,0 +1,34 @@
+import pytest
+
+from app.pii import mask_pii
+
+
+@pytest.mark.parametrize(
+    ("text", "expected"),
+    [
+        ("mail me at jane.doe@example.com", "mail me at [EMAIL]"),
+        ("call +1 415-555-0132 now", "call [PHONE] now"),
+        ("my number is 9876543210", "my number is [PHONE]"),
+        ("card 4111 1111 1111 1111 please", "card [CARD] please"),
+        ("card 4111-1111-1111-1111", "card [CARD]"),
+    ],
+)
+def test_masks_personal_data(text: str, expected: str) -> None:
+    masked, changed = mask_pii(text)
+    assert masked == expected
+    assert changed is True
+
+
+@pytest.mark.parametrize(
+    "text",
+    [
+        "Where is order ORD-1002?",
+        "Invoice INV-2026-0042 total is 910.44 USD",
+        "Leave accrues at 2 days per month",
+        "tracking 1234567890123",  # 13 digits but fails the Luhn check, so not a card
+    ],
+)
+def test_leaves_normal_text_alone(text: str) -> None:
+    masked, changed = mask_pii(text)
+    assert masked == text
+    assert changed is False
