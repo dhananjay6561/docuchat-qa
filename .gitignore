@@ -6,3 +6,5 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 evals/cassettes/pending/
+tests/cassettes/pending/
+safety/cassettes/pending/
