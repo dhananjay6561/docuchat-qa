@@ -8,3 +8,4 @@ __pycache__/
 evals/cassettes/pending/
 tests/cassettes/pending/
 safety/cassettes/pending/
+safety/reports/latest.json
