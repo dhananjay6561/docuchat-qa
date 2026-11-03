@@ -1,0 +1,17 @@
+services:
+  docuchat:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      # Defaults to the offline mock so `docker compose up` works without an API key.
+      LLM_PROVIDER: ${LLM_PROVIDER:-mock}
+      DB_PATH: /srv/var/docuchat.db
+    volumes:
+      - chat-logs:/srv/var
+
+volumes:
+  chat-logs:
