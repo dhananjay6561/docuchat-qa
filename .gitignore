@@ -12,3 +12,5 @@ safety/reports/latest.json
 /test-results/
 /reports/
 perf/reports/*.html
+evals/reports/*-smoke.*
+evals/reports/smoke-latest.md

@@ -158,7 +158,8 @@ def to_markdown(report: dict[str, Any]) -> str:
     lines = [
         f"# Eval report {meta['run_id']}",
         "",
-        f"- Cases: {overall['cases']} (dataset v{meta['dataset_version']}, prompt v{meta['prompt_version']})",
+        f"- Cases: {overall['cases']} ({meta.get('subset', 'full')} set; dataset v{meta['dataset_version']}, "
+        f"prompt v{meta['prompt_version']})",
         f"- Corpus: {meta.get('corpus', 'n/a')}",
         f"- Answering model: {meta['provider']}",
         f"- Judge: {meta['judge']}",
@@ -219,12 +220,13 @@ def to_markdown(report: dict[str, Any]) -> str:
 
 def write_report(report: dict[str, Any]) -> Path:
     REPORTS_DIR.mkdir(exist_ok=True)
-    run_id = report["meta"]["run_id"]
-    (REPORTS_DIR / f"{run_id}.json").write_text(json.dumps(report, indent=2) + "\n")
+    smoke = report["meta"].get("subset") == "smoke"
+    name = f"{report['meta']['run_id']}{'-smoke' if smoke else ''}"
+    (REPORTS_DIR / f"{name}.json").write_text(json.dumps(report, indent=2) + "\n")
     markdown = to_markdown(report)
-    (REPORTS_DIR / f"{run_id}.md").write_text(markdown)
-    (REPORTS_DIR / "latest.md").write_text(markdown)
-    return REPORTS_DIR / f"{run_id}.md"
+    (REPORTS_DIR / f"{name}.md").write_text(markdown)
+    (REPORTS_DIR / ("smoke-latest.md" if smoke else "latest.md")).write_text(markdown)
+    return REPORTS_DIR / f"{name}.md"
 
 
 def new_run_id() -> str:

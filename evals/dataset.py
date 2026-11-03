@@ -9,6 +9,16 @@ import yaml
 DATASET_PATH = Path(__file__).resolve().parent / "golden_dataset.yaml"
 CATEGORIES = ("factual", "multi-doc", "unanswerable", "tool", "adversarial")
 
+# 20-case smoke subset for pull requests: every category, plus the guardrail case (A12), so a PR
+# gets a real quality signal in a fraction of the time. main and nightly runs use all cases.
+SMOKE_IDS = (
+    "F01", "F05", "F11", "F17", "F20", "F23", "F28", "F31",
+    "M01", "M03", "M05",
+    "U01", "U03", "U07", "U14",
+    "T01", "T03", "T07",
+    "A02", "A12",
+)  # fmt: skip
+
 
 @dataclass(frozen=True)
 class GoldenCase:
