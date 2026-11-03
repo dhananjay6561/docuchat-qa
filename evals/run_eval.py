@@ -7,6 +7,7 @@ Exit codes: 0 = all scores meet baseline, 1 = below baseline, 3 = recordings mis
 """
 
 import argparse
+import hashlib
 import os
 import sys
 
@@ -21,6 +22,14 @@ from evals.dataset import DATASET_PATH, load_cases  # noqa: E402
 from evals.judges import JUDGE_MODEL, build_deepeval_judge, build_ragas_judge, judge_cassette  # noqa: E402
 
 PENDING_EXIT = 3
+
+
+def corpus_fingerprint(settings: Settings) -> str:
+    """Short hash of every document, so a report shows when the knowledge base changed."""
+    digest = hashlib.sha256()
+    for path in sorted(settings.docs_dir.glob("*.md")):
+        digest.update(path.name.encode() + path.read_bytes())
+    return digest.hexdigest()[:12]
 
 
 def _stop_for_recordings(stage: str, missing: int) -> None:
@@ -57,6 +66,7 @@ def main() -> None:
         "judge": f"{os.getenv('JUDGE_PROVIDER', 'recorded')}:{JUDGE_MODEL}",
         "prompt_version": answers[0]["prompt_version"],
         "dataset_version": yaml.safe_load(DATASET_PATH.read_text())["version"],
+        "corpus": f"{len(list(settings.docs_dir.glob('*.md')))} docs, {corpus_fingerprint(settings)}",
     }
     full = report.build_report(rows, ragas_rows, meta)
     path = report.write_report(full)

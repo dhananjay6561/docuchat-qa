@@ -149,6 +149,7 @@ def to_markdown(report: dict[str, Any]) -> str:
         f"# Eval report {meta['run_id']}",
         "",
         f"- Cases: {overall['cases']} (dataset v{meta['dataset_version']}, prompt v{meta['prompt_version']})",
+        f"- Corpus: {meta.get('corpus', 'n/a')}",
         f"- Answering model: {meta['provider']}",
         f"- Judge: {meta['judge']}",
         "",
