@@ -7,6 +7,10 @@ import re
 
 CARD = re.compile(r"\b(?:\d[ -]?){12,18}\d\b")
 PHONE = re.compile(r"(?<![\w-])(?:\+\d{1,3}[ .-]?)?(?:\(\d{3}\)|\d{3})[ .-]?\d{3}[ .-]?\d{4}\b")
+# International numbers group digits differently (+91 98765 43210, +44 20 7946 0958), so any
+# "+country code" followed by 2-5 digit groups counts. Found by the log audit (REG-001, REG-002).
+INTL_PHONE = re.compile(r"(?<![\w-])\+\d{1,3}(?:[ .-]?\d{2,5}){2,4}\b")
+IN_LOCAL_PHONE = re.compile(r"(?<![\w-])\d{5}[ -]\d{5}\b")
 EMAIL = re.compile(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b")
 
 
@@ -26,9 +30,16 @@ def _mask_card(match: re.Match[str]) -> str:
     return "[CARD]" if 13 <= len(digits) <= 19 and _luhn_ok(digits) else match.group(0)
 
 
+def _mask_intl(match: re.Match[str]) -> str:
+    digits = re.sub(r"\D", "", match.group(0))
+    return "[PHONE]" if 9 <= len(digits) <= 15 else match.group(0)  # E.164 allows up to 15 digits
+
+
 def mask_pii(text: str) -> tuple[str, bool]:
     """Return (masked_text, was_anything_masked)."""
     masked = CARD.sub(_mask_card, text)
+    masked = INTL_PHONE.sub(_mask_intl, masked)
     masked = PHONE.sub("[PHONE]", masked)
+    masked = IN_LOCAL_PHONE.sub("[PHONE]", masked)
     masked = EMAIL.sub("[EMAIL]", masked)
     return masked, masked != text

@@ -32,3 +32,16 @@ def test_leaves_normal_text_alone(text: str) -> None:
     masked, changed = mask_pii(text)
     assert masked == text
     assert changed is False
+
+
+@pytest.mark.parametrize(
+    ("text", "expected"),
+    [
+        ("+91 98765 43210", "[PHONE]"),
+        ("+44 20 7946 0958", "[PHONE]"),
+        ("98765-43210", "[PHONE]"),
+        ("+1 (415) 555-0132", "[PHONE]"),
+    ],
+)
+def test_masks_international_formats(text: str, expected: str) -> None:
+    assert mask_pii(text)[0] == expected
