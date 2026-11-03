@@ -1,0 +1,34 @@
+"""Masks personal data before anything is written to the log database.
+
+Cards are masked first because a card number also contains phone-number-shaped digit runs.
+"""
+
+import re
+
+CARD = re.compile(r"\b(?:\d[ -]?){12,18}\d\b")
+PHONE = re.compile(r"(?<![\w-])(?:\+\d{1,3}[ .-]?)?(?:\(\d{3}\)|\d{3})[ .-]?\d{3}[ .-]?\d{4}\b")
+EMAIL = re.compile(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b")
+
+
+def _luhn_ok(digits: str) -> bool:
+    # Luhn check avoids masking long numbers that aren't cards (invoice or tracking numbers).
+    total, parity = 0, len(digits) % 2
+    for i, ch in enumerate(digits):
+        d = int(ch)
+        if i % 2 == parity:
+            d = d * 2 - 9 if d > 4 else d * 2
+        total += d
+    return total % 10 == 0
+
+
+def _mask_card(match: re.Match[str]) -> str:
+    digits = re.sub(r"\D", "", match.group(0))
+    return "[CARD]" if 13 <= len(digits) <= 19 and _luhn_ok(digits) else match.group(0)
+
+
+def mask_pii(text: str) -> tuple[str, bool]:
+    """Return (masked_text, was_anything_masked)."""
+    masked = CARD.sub(_mask_card, text)
+    masked = PHONE.sub("[PHONE]", masked)
+    masked = EMAIL.sub("[EMAIL]", masked)
+    return masked, masked != text
