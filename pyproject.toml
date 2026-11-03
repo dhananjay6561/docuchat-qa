@@ -41,6 +41,7 @@ markers = [
     "conversation: multi-turn conversation scripts (recorded LLM)",
     "tools: tool-calling behaviour (recorded LLM)",
     "regression: tests added from production failures",
+    "safety: red-team and injection guards",
 ]
 
 [tool.ruff]
