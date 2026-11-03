@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DocuChat</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="chat" data-testid="chat-app">
+    <header class="chat__header">
+      <h1>DocuChat</h1>
+      <span class="chat__session" data-testid="session-id"></span>
+      <button type="button" data-testid="new-session-button" id="new-session">New chat</button>
+    </header>
+
+    <div class="chat__error" data-testid="error-banner" id="error" role="alert" hidden></div>
+
+    <ol class="chat__log" data-testid="chat-log" id="log" aria-live="polite"></ol>
+
+    <form class="chat__form" data-testid="chat-form" id="form">
+      <input type="text" id="input" data-testid="message-input" maxlength="2000"
+             placeholder="Ask about policies, products or an order (e.g. ORD-1002)" autocomplete="off" required>
+      <button type="submit" data-testid="send-button" id="send">Send</button>
+    </form>
+    <p class="chat__loading" data-testid="loading-indicator" id="loading" hidden>Thinking...</p>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
