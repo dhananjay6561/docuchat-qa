@@ -10,38 +10,46 @@ from pathlib import Path
 
 from app.llm.cassette import Cassette
 
-CASSETTE_DIR = Path(__file__).resolve().parent / "cassettes"
-PENDING_DIR = CASSETTE_DIR / "pending"
+ROOT = Path(__file__).resolve().parent.parent
+CASSETTE_DIR = ROOT / "evals" / "cassettes"
 
 
-def batches(name: str, size: int) -> None:
-    pending = PENDING_DIR / f"{name}.jsonl"
-    rows = [line for line in pending.read_text().splitlines() if line.strip()]
-    for old in PENDING_DIR.glob(f"{name}_batch_*.jsonl"):
+def batches(cassette_dir: Path, name: str, size: int) -> None:
+    pending_dir = cassette_dir / "pending"
+    pending = pending_dir / f"{name}.jsonl"
+    # Separate runs can queue the same request twice; answer each unique request once.
+    unique: dict[str, str] = {}
+    for line in pending.read_text().splitlines():
+        if line.strip():
+            unique.setdefault(json.loads(line)["key"], line)
+    rows = list(unique.values())
+    for old in pending_dir.glob(f"{name}_batch_*.jsonl"):
         old.unlink()
     for i in range(0, len(rows), size):
-        out = PENDING_DIR / f"{name}_batch_{i // size + 1:02d}.jsonl"
+        out = pending_dir / f"{name}_batch_{i // size + 1:02d}.jsonl"
         out.write_text("\n".join(rows[i : i + size]) + "\n")
-        print(out.relative_to(CASSETTE_DIR.parent.parent))
+        print(out.relative_to(ROOT))
     print(f"{len(rows)} pending request(s)")
 
 
-def merge(name: str) -> None:
-    cassette = Cassette(CASSETTE_DIR / f"{name}.jsonl")
+def merge(cassette_dir: Path, name: str) -> None:
+    pending_dir = cassette_dir / "pending"
+    cassette = Cassette(cassette_dir / f"{name}.jsonl")
     added = 0
-    for responses in sorted(PENDING_DIR.glob(f"{name}_batch_*.responses.jsonl")):
+    for responses in sorted(pending_dir.glob(f"{name}_batch_*.responses.jsonl")):
         for line in responses.read_text().splitlines():  # validate before merging
             if line.strip():
                 row = json.loads(line)
                 assert {"key", "response"} <= row.keys(), f"bad row in {responses.name}"
         added += cassette.merge(responses)
-    for leftover in PENDING_DIR.glob(f"{name}*.jsonl"):
+    for leftover in pending_dir.glob(f"{name}*.jsonl"):
         leftover.unlink()
     print(f"Merged {added} new response(s); {name} cassette now has {len(cassette)} entries")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument("--dir", type=Path, default=CASSETTE_DIR, help="folder holding the cassettes")
     sub = parser.add_subparsers(dest="cmd", required=True)
     b = sub.add_parser("batches")
     b.add_argument("name")
@@ -49,4 +57,5 @@ if __name__ == "__main__":
     m = sub.add_parser("merge")
     m.add_argument("name")
     args = parser.parse_args()
-    batches(args.name, args.size) if args.cmd == "batches" else merge(args.name)
+    cassette_dir = args.dir if args.dir.is_absolute() else ROOT / args.dir
+    batches(cassette_dir, args.name, args.size) if args.cmd == "batches" else merge(cassette_dir, args.name)
