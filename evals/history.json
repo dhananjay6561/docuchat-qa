@@ -1,0 +1,17 @@
+[
+  {
+    "run_id": "20261103T113426Z",
+    "fingerprint": "af37354ef0cc3cfe",
+    "prompt_version": 2,
+    "provider": "recorded:claude-opus-5-5",
+    "judge": "recorded:claude-opus-5-5",
+    "cases": 80,
+    "hallucination_rate": 0.0,
+    "refusal_correct_rate": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "contextual_precision": 0.9644,
+    "contextual_recall": 0.98,
+    "hallucination": 1.0
+  }
+]
