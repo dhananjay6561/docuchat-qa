@@ -95,3 +95,13 @@ def test_ui_is_served(client: TestClient) -> None:
     response = client.get("/")
     assert response.status_code == 200
     assert 'data-testid="message-input"' in response.text
+
+
+def test_chunk_id_citations_map_to_documents() -> None:
+    from app.chat_service import ChatService
+    from app.rag.loader import Chunk
+    from app.rag.retriever import Hit
+
+    hits = [Hit(Chunk("faq#0", "faq", "text"), 1.0), Hit(Chunk("refund_policy#0", "refund_policy", "t"), 1.0)]
+    sources = ChatService._cited_sources("Yes [faq#0, refund_policy#0].", hits)
+    assert [s.doc for s in sources] == ["faq", "refund_policy"]

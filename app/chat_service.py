@@ -17,9 +17,26 @@ from app.tools.orders import OrderTool
 REFUSAL_MARKER = "don't have that information"
 PROVIDER_DECLINED = "Sorry, I can't help with that request."
 TOOL_LOOP_EXHAUSTED = "Sorry, I couldn't complete that request. Please try rephrasing it."
-CITATION = re.compile(r"\[([a-z0-9_\-]+)\]")
+CITATION = re.compile(r"\[([^\]]+)\]")
 MAX_TOOL_ROUNDS = 3  # stops a model that keeps calling tools from looping forever
 SNIPPET_CHARS = 160
+
+
+@dataclass
+class ToolEvent:
+    name: str
+    arguments: dict
+    result: dict
+
+
+@dataclass
+class ChatResult:
+    """The API response plus what happened internally. Evals need the retrieved chunks and tool
+    results to judge faithfulness and retrieval quality; the HTTP API only returns `response`."""
+
+    response: ChatResponse
+    retrieved: list[Hit]
+    tool_events: list[ToolEvent]
 
 
 @dataclass
@@ -53,11 +70,15 @@ class ChatService:
         self.top_k = top_k
 
     def chat(self, session_id: str, message: str) -> ChatResponse:
+        return self.chat_with_trace(session_id, message).response
+
+    def chat_with_trace(self, session_id: str, message: str) -> ChatResult:
         started = time.perf_counter()
         hits = self.retriever.search(self._retrieval_query(session_id, message), self.top_k)
         conversation = [*self.memory.history(session_id), Message("user", self._user_turn(message, hits))]
 
-        answer, tool_names, input_tokens, output_tokens = self._run_llm(conversation)
+        answer, tool_events, input_tokens, output_tokens = self._run_llm(conversation)
+        tool_names = [e.name for e in tool_events]
 
         refused = REFUSAL_MARKER in answer.lower() or answer == PROVIDER_DECLINED
         sources = [] if refused else self._cited_sources(answer, hits)
@@ -78,7 +99,7 @@ class ChatService:
                 provider=self.llm.name,
             )
         )
-        return ChatResponse(
+        response = ChatResponse(
             session_id=session_id,
             answer=answer,
             sources=sources,
@@ -86,24 +107,25 @@ class ChatService:
             tool_calls=tool_names,
             latency_ms=round(latency_ms, 2),
         )
+        return ChatResult(response=response, retrieved=hits, tool_events=tool_events)
 
-    def _run_llm(self, conversation: list[Message]) -> tuple[str, list[str], int, int]:
-        tool_names: list[str] = []
+    def _run_llm(self, conversation: list[Message]) -> tuple[str, list[ToolEvent], int, int]:
+        tool_events: list[ToolEvent] = []
         input_tokens = output_tokens = 0
         for _ in range(MAX_TOOL_ROUNDS):
             response = self.llm.complete(self.prompt.system, conversation, self.tools.specs)
             input_tokens += response.input_tokens
             output_tokens += response.output_tokens
             if response.refused_by_provider:
-                return PROVIDER_DECLINED, tool_names, input_tokens, output_tokens
+                return PROVIDER_DECLINED, tool_events, input_tokens, output_tokens
             if not response.tool_calls:
-                return response.text, tool_names, input_tokens, output_tokens
+                return response.text, tool_events, input_tokens, output_tokens
             conversation.append(Message("assistant", response.text, response.tool_calls, raw=response.raw))
             for call in response.tool_calls:
-                tool_names.append(call.name)
                 result = self.tools.execute(call)
+                tool_events.append(ToolEvent(call.name, call.arguments, result))
                 conversation.append(Message("tool", self.tools.to_message(result), tool_call_id=call.id))
-        return TOOL_LOOP_EXHAUSTED, tool_names, input_tokens, output_tokens
+        return TOOL_LOOP_EXHAUSTED, tool_events, input_tokens, output_tokens
 
     def _retrieval_query(self, session_id: str, message: str) -> str:
         # Follow-ups like "and for contractors?" have no keywords of their own, so the previous
@@ -120,7 +142,11 @@ class ChatService:
     def _cited_sources(answer: str, hits: list[Hit]) -> list[Source]:
         # Only return chunks from documents the answer actually cites, so the UI never shows
         # a "source" the model didn't use.
-        cited = set(CITATION.findall(answer))
+        # Models cite either the doc id ("[faq]") or the chunk id they were shown ("[faq#0]"),
+        # sometimes several in one bracket ("[faq#0, refund_policy#1]"); all map to doc ids.
+        cited = {
+            part.strip().split("#")[0] for group in CITATION.findall(answer) for part in group.split(",")
+        }
         seen: set[str] = set()
         sources: list[Source] = []
         for hit in hits:
