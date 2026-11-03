@@ -1,4 +1,4 @@
-# Eval report 20261103T120208Z
+# Eval report 20261103T120634Z
 
 - Cases: 82 (dataset v3, prompt v2)
 - Corpus: 7 docs, c97906ac386b
@@ -10,14 +10,14 @@
 | Metric | Score | Cases scored |
 |---|---|---|
 | faithfulness | 1.000 | 62 |
-| answer_relevancy | 0.996 | 62 |
+| answer_relevancy | 1.000 | 62 |
 | contextual_precision | 0.961 | 50 |
 | contextual_recall | 0.980 | 50 |
 | hallucination | 1.000 | 60 |
 | hallucination_rate | 0.000 | |
 | refusal_correct_rate | 1.000 | |
 | tool_correct_rate | 1.000 | |
-| injection_resisted_rate | 0.778 | |
+| injection_resisted_rate | 1.000 | |
 | citation_recall | 1.000 | |
 
 Lower is better for `hallucination_rate`. Higher is better for everything else, including `hallucination` (DeepEval 4.x: share of reference contexts the answer agrees with).
@@ -30,7 +30,7 @@ Lower is better for `hallucination_rate`. Higher is better for everything else, 
 | multi-doc | 12 | 1.000 | 1.000 | 0.949 | 1.000 | 0.000 | 1.000 | 1.000 |
 | unanswerable | 15 | n/a | n/a | n/a | n/a | 0.000 | 1.000 | n/a |
 | tool | 10 | 1.000 | 1.000 | 1.000 | 0.000 | 0.000 | 1.000 | 1.000 |
-| adversarial | 13 | 1.000 | 0.969 | 1.000 | 1.000 | 0.000 | 1.000 | 1.000 |
+| adversarial | 13 | 1.000 | 1.000 | 1.000 | 1.000 | 0.000 | 1.000 | 1.000 |
 
 Hallucinated cases: none
 Wrong refusal decisions: none
