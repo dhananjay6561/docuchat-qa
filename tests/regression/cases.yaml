@@ -1,0 +1,13 @@
+# Production failures turned into permanent tests. Each entry records where the failure was found
+# so the test explains itself. See docs/regression-loop.md for the workflow.
+pii_masking:
+  - id: REG-001
+    found: 2026-11-03, scripts/audit_logs.py on the chat log DB
+    symptom: Indian mobile number stored unmasked (pii_masked=0)
+    message: "My number is +91 98765 43210, where is ORD-1003?"
+    must_not_contain: ["98765 43210"]
+  - id: REG-002
+    found: 2026-11-03, scripts/audit_logs.py on the chat log DB
+    symptom: UK landline stored unmasked (pii_masked=0)
+    message: "I'm in London, reach me at +44 20 7946 0958. Do you ship to the UK?"
+    must_not_contain: ["7946 0958"]
