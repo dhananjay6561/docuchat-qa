@@ -1,0 +1,9 @@
+# Appium capabilities for mobile WEB testing: the chat UI in Chrome on an Android emulator.
+# This is not a native app; Appium drives Chrome through UiAutomator2 + Chromedriver.
+platformName: Android
+appium:automationName: UiAutomator2
+appium:deviceName: emulator-5554          # `adb devices` shows the name of your running emulator
+browserName: Chrome
+appium:chromedriverAutodownload: true     # fetch a Chromedriver matching the emulator's Chrome
+appium:newCommandTimeout: 120
+appium:noReset: true
