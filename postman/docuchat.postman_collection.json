@@ -1,0 +1,273 @@
+{
+  "info": {
+    "name": "DocuChat QA 0.1.0",
+    "description": "Generated from openapi.json by scripts/export_postman.py. Do not edit by hand.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8000"
+    },
+    {
+      "key": "apiKey",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "system",
+      "item": [
+        {
+          "name": "health",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-API-Key",
+                "value": "{{apiKey}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/health",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "health"
+              ]
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"status is 200\", () => pm.response.to.have.status(200));",
+                  "pm.test(\"body matches openapi.json\", () => pm.response.to.have.jsonSchema({\"properties\": {\"status\": {\"type\": \"string\", \"title\": \"Status\"}, \"provider\": {\"type\": \"string\", \"title\": \"Provider\"}, \"chunks_indexed\": {\"type\": \"integer\", \"title\": \"Chunks Indexed\"}}, \"type\": \"object\", \"required\": [\"status\", \"provider\", \"chunks_indexed\"], \"title\": \"HealthResponse\"}));",
+                  "pm.test(\"reports ok\", () => pm.expect(pm.response.json().status).to.eql(\"ok\"));"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "chat",
+      "item": [
+        {
+          "name": "answered with sources",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-API-Key",
+                "value": "{{apiKey}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/chat",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "chat"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"session_id\": \"pm-1\", \"message\": \"How many days of paid sick leave do employees get?\"}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"status is 200\", () => pm.response.to.have.status(200));",
+                  "pm.test(\"body matches openapi.json\", () => pm.response.to.have.jsonSchema({\"properties\": {\"session_id\": {\"type\": \"string\", \"title\": \"Session Id\"}, \"answer\": {\"type\": \"string\", \"title\": \"Answer\"}, \"sources\": {\"items\": {\"properties\": {\"doc\": {\"type\": \"string\", \"title\": \"Doc\", \"description\": \"Document name, e.g. 'leave_policy'\"}, \"chunk_id\": {\"type\": \"string\", \"title\": \"Chunk Id\", \"description\": \"Chunk identifier, e.g. 'leave_policy#2'\"}, \"snippet\": {\"type\": \"string\", \"title\": \"Snippet\", \"description\": \"First part of the chunk text, shown in the UI\"}}, \"type\": \"object\", \"required\": [\"doc\", \"chunk_id\", \"snippet\"], \"title\": \"Source\"}, \"type\": \"array\", \"title\": \"Sources\"}, \"refused\": {\"type\": \"boolean\", \"title\": \"Refused\", \"description\": \"True when the assistant declined because the docs don't cover it\"}, \"tool_calls\": {\"items\": {\"type\": \"string\"}, \"type\": \"array\", \"title\": \"Tool Calls\", \"description\": \"Names of tools called for this answer\"}, \"latency_ms\": {\"type\": \"number\", \"title\": \"Latency Ms\"}}, \"type\": \"object\", \"required\": [\"session_id\", \"answer\", \"sources\", \"refused\", \"latency_ms\"], \"title\": \"ChatResponse\"}));",
+                  "pm.test(\"not refused\", () => pm.expect(pm.response.json().refused).to.be.false);",
+                  "pm.test(\"cites a source\", () => pm.expect(pm.response.json().sources.length).to.be.above(0));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "refusal for unanswerable question",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-API-Key",
+                "value": "{{apiKey}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/chat",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "chat"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"session_id\": \"pm-2\", \"message\": \"What is the CEO's favourite football team?\"}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"status is 200\", () => pm.response.to.have.status(200));",
+                  "pm.test(\"body matches openapi.json\", () => pm.response.to.have.jsonSchema({\"properties\": {\"session_id\": {\"type\": \"string\", \"title\": \"Session Id\"}, \"answer\": {\"type\": \"string\", \"title\": \"Answer\"}, \"sources\": {\"items\": {\"properties\": {\"doc\": {\"type\": \"string\", \"title\": \"Doc\", \"description\": \"Document name, e.g. 'leave_policy'\"}, \"chunk_id\": {\"type\": \"string\", \"title\": \"Chunk Id\", \"description\": \"Chunk identifier, e.g. 'leave_policy#2'\"}, \"snippet\": {\"type\": \"string\", \"title\": \"Snippet\", \"description\": \"First part of the chunk text, shown in the UI\"}}, \"type\": \"object\", \"required\": [\"doc\", \"chunk_id\", \"snippet\"], \"title\": \"Source\"}, \"type\": \"array\", \"title\": \"Sources\"}, \"refused\": {\"type\": \"boolean\", \"title\": \"Refused\", \"description\": \"True when the assistant declined because the docs don't cover it\"}, \"tool_calls\": {\"items\": {\"type\": \"string\"}, \"type\": \"array\", \"title\": \"Tool Calls\", \"description\": \"Names of tools called for this answer\"}, \"latency_ms\": {\"type\": \"number\", \"title\": \"Latency Ms\"}}, \"type\": \"object\", \"required\": [\"session_id\", \"answer\", \"sources\", \"refused\", \"latency_ms\"], \"title\": \"ChatResponse\"}));",
+                  "pm.test(\"refused\", () => pm.expect(pm.response.json().refused).to.be.true);",
+                  "pm.test(\"no sources\", () => pm.expect(pm.response.json().sources).to.eql([]));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "order status uses the tool",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-API-Key",
+                "value": "{{apiKey}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/chat",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "chat"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"session_id\": \"pm-3\", \"message\": \"Where is my order ORD-1002?\"}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"status is 200\", () => pm.response.to.have.status(200));",
+                  "pm.test(\"body matches openapi.json\", () => pm.response.to.have.jsonSchema({\"properties\": {\"session_id\": {\"type\": \"string\", \"title\": \"Session Id\"}, \"answer\": {\"type\": \"string\", \"title\": \"Answer\"}, \"sources\": {\"items\": {\"properties\": {\"doc\": {\"type\": \"string\", \"title\": \"Doc\", \"description\": \"Document name, e.g. 'leave_policy'\"}, \"chunk_id\": {\"type\": \"string\", \"title\": \"Chunk Id\", \"description\": \"Chunk identifier, e.g. 'leave_policy#2'\"}, \"snippet\": {\"type\": \"string\", \"title\": \"Snippet\", \"description\": \"First part of the chunk text, shown in the UI\"}}, \"type\": \"object\", \"required\": [\"doc\", \"chunk_id\", \"snippet\"], \"title\": \"Source\"}, \"type\": \"array\", \"title\": \"Sources\"}, \"refused\": {\"type\": \"boolean\", \"title\": \"Refused\", \"description\": \"True when the assistant declined because the docs don't cover it\"}, \"tool_calls\": {\"items\": {\"type\": \"string\"}, \"type\": \"array\", \"title\": \"Tool Calls\", \"description\": \"Names of tools called for this answer\"}, \"latency_ms\": {\"type\": \"number\", \"title\": \"Latency Ms\"}}, \"type\": \"object\", \"required\": [\"session_id\", \"answer\", \"sources\", \"refused\", \"latency_ms\"], \"title\": \"ChatResponse\"}));",
+                  "pm.test(\"tool called\", () => pm.expect(pm.response.json().tool_calls).to.include(\"get_order_status\"));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "empty message is rejected",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-API-Key",
+                "value": "{{apiKey}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/chat",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "chat"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"session_id\": \"pm-4\", \"message\": \"\"}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"status is 422\", () => pm.response.to.have.status(422));",
+                  "pm.test(\"body matches openapi.json\", () => pm.response.to.have.jsonSchema({\"properties\": {\"detail\": {\"items\": {\"properties\": {\"loc\": {\"items\": {\"anyOf\": [{\"type\": \"string\"}, {\"type\": \"integer\"}]}, \"type\": \"array\", \"title\": \"Location\"}, \"msg\": {\"type\": \"string\", \"title\": \"Message\"}, \"type\": {\"type\": \"string\", \"title\": \"Error Type\"}, \"input\": {\"title\": \"Input\"}, \"ctx\": {\"type\": \"object\", \"title\": \"Context\"}}, \"type\": \"object\", \"required\": [\"loc\", \"msg\", \"type\"], \"title\": \"ValidationError\"}, \"type\": \"array\", \"title\": \"Detail\"}}, \"type\": \"object\", \"title\": \"HTTPValidationError\"}));",
+                  "pm.test(\"names the field\", () => pm.expect(JSON.stringify(pm.response.json().detail)).to.include(\"message\"));"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "wrong method",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-API-Key",
+                "value": "{{apiKey}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/chat",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "chat"
+              ]
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"status is 405\", () => pm.response.to.have.status(405));"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
