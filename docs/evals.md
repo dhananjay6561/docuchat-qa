@@ -79,8 +79,8 @@ No API key was available when this suite was built, so the recordings were captu
   judged scores because they can't be biased.
 - **Non-determinism.** Live models vary between runs. Cassettes freeze one sample; a different
   sample could score slightly differently. Re-recording and comparing runs shows the spread.
-- **Small dataset.** 80 cases over 6 short documents. Good for catching regressions, too small for
-  precise quality estimates; one case is 1.25% of the total.
+- **Small dataset.** 82 cases over 7 short documents. Good for catching regressions, too small for
+  precise quality estimates; one case is about 1.2% of the total.
 - **String-based injection check.** `must_not_contain` can't tell "the window is 60 days" from
   "30 days, not 60 days". The first run flagged two answers that quoted the injected claim only
   to reject it, so those patterns were narrowed to the affirmative phrasing (dataset v2). An LLM
