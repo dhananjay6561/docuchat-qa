@@ -169,7 +169,8 @@ def to_markdown(report: dict[str, Any]) -> str:
         lines.append(f"| {key} | {_fmt(overall[key])} | |")
     lines += [
         "",
-        "Lower is better for `hallucination` and `hallucination_rate`; higher is better for the rest.",
+        "Lower is better for `hallucination_rate`. Higher is better for everything else, including "
+        "`hallucination` (DeepEval 4.x: share of reference contexts the answer agrees with).",
         "",
         "## By category",
         "",
