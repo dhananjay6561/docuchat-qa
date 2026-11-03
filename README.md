@@ -2,14 +2,14 @@
 
 A tiny AI document assistant with a full QA platform around it. The app is deliberately small; the
 project is about how it is tested: LLM evals, red-teaming, multi-turn and tool tests, an OOP pytest
-framework (API, browser, SQL), contract tests with Newman, and a regression loop that turns
-production failures into permanent tests.
+framework (API, browser, mobile web, SQL), contract tests with Newman, load tests with Locust, and a
+regression loop that turns production failures into permanent tests.
 
 Everything runs locally. No cloud services.
 
-> **Status:** app, LLM evals, red-teaming, conversation/tool tests, regression loop and the test
-> framework (API, Playwright, SQL, Newman, Allure) are done. Mobile web, load testing and the CI
-> quality gate are next.
+> **Status:** app, LLM evals, red-teaming, conversation/tool tests, regression loop, test framework
+> (API, Playwright, SQL, Newman, Allure), mobile-web tests and load testing are done. The CI quality
+> gate is next.
 
 ---
 
@@ -39,7 +39,7 @@ respond.
 | Retrieval | BM25 (`rank-bm25`) | No model download, deterministic, so eval runs are comparable |
 | LLM | `LLMProvider` interface | Anthropic adapter by default; swap vendors by adding one adapter |
 | Recorded provider | cassette replay keyed by request hash | Evals and LLM tests run offline and give identical results |
-| Mock provider | rule-based offline answers | Free, instant answers for UI, API, SQL and load tests |
+| Mock provider | rule-based offline answers, optional simulated latency | Free answers for UI, API, SQL and load tests |
 | Tool | `get_order_status` on SQLite | `TOOL_FAILURE_MODE=timeout\|error` simulates a broken backend |
 | Output guardrail | `app/pii.py: redact_answer` | Removes contact details the business doesn't publish |
 | Logging | SQLite `chat_logs` | Emails, phones (US + international) and Luhn-valid cards masked before writing |
@@ -58,6 +58,8 @@ Each kind of risk gets the cheapest check that can catch it:
 | Tool misuse and failure handling | 8 tool-calling tests incl. timeouts | `tests/tools/` |
 | API contract drift, bad input handling, auth | OpenAPI validation, negative tests, Schemathesis fuzzing, Newman | `tests/api/`, `postman/` |
 | Broken UI | Playwright with Page Objects | `tests/web/` |
+| Broken mobile layout or flow | Appium (UiAutomator2) driving Chrome on Android | `tests/mobile/` |
+| Slow or failing under load, cost per query | Locust with staged ramp, cost from logged tokens | `perf/` |
 | Bad data in the log table (raw PII, missing fields) | SQL validation + log audit | `tests/data/`, `scripts/audit_logs.py` |
 | Bugs coming back | regression cases from real failures | `tests/regression/` |
 
@@ -108,7 +110,7 @@ uv run python -m scripts.export_postman   # postman/docuchat.postman_collection.
 ## Test framework
 
 ```bash
-uv run pytest                              # all 124 tests, offline
+uv run pytest                              # all tests, offline (mobile tests skip without --run-mobile)
 uv run pytest -m api                       # or: web, data, conversation, tools, regression, safety, smoke
 uv run pytest --alluredir=reports/allure-results
 npx allure-commandline generate reports/allure-results -o reports/allure-report --clean
@@ -126,9 +128,11 @@ npx allure-commandline generate reports/allure-results -o reports/allure-report 
 | Regression | `regression` | 6 | real failures turned into tests |
 | Safety guards | `tests/safety` | 6 | the poisoned document really reaches the model |
 | Eval plumbing | `tests/evals` | 6 | dataset validity, metrics, hallucination polarity, baseline gate |
-| **Total** | | **124** | **124 passed**; Allure summary: 124 passed, 0 failed, 0 broken |
+| Mobile web (Appium) | `mobile` | 5 | skipped by default; needs an emulator (see below) |
+| **Total** | | **129** | **124 passed, 5 skipped** (mobile) |
 
-Newman runs the generated Postman collection: 6 requests, 18 assertions, 0 failed.
+Newman runs the generated Postman collection: 6 requests, 18 assertions, 0 failed. The Allure
+report for the full run: 124 passed, 0 failed, 0 broken.
 
 **How it is built** (`tests/framework/`):
 
@@ -142,6 +146,71 @@ Newman runs the generated Postman collection: 6 requests, 18 assertions, 0 faile
 - `live_server.py`: starts the real app in uvicorn on a free port with its own database.
 - `log_db.py`: read-only SQL access for data-validation tests.
 - Playwright keeps screenshots and traces only for failing tests (`test-results/`).
+
+## Mobile web tests (Appium)
+
+**This is mobile web automation, not a native app:** Appium drives Chrome on an Android emulator
+through UiAutomator2 and opens the same chat UI. Five tests in
+[`tests/mobile/`](tests/mobile/test_mobile_chat.py) cover answers with sources, the refusal badge,
+follow-ups, new chat, and a layout check that the page never scrolls sideways on a phone screen.
+They reuse the desktop UI's `data-testid` locators through a mobile Page Object.
+
+> **Not yet executed on an emulator.** The tests, capabilities and Page Object are written and
+> collected (`pytest -m mobile --co` → 5 tests), but the machine they were built on has no Android
+> emulator, so no pass/fail result exists yet. They are skipped in normal runs and in CI.
+
+Setup and run:
+
+1. Install Android Studio. In Device Manager, create an emulator (e.g. Pixel 7, API 34 with Google
+   APIs so Chrome is included) and start it. `adb devices` should list `emulator-5554`.
+2. Install Appium and the driver:
+   ```bash
+   npm install -g appium
+   appium driver install uiautomator2
+   appium                                  # serves on http://127.0.0.1:4723
+   ```
+3. Start the app so the emulator can reach it (`10.0.2.2` is the host machine from inside the emulator):
+   ```bash
+   LLM_PROVIDER=mock uv run uvicorn app.main:app --host 0.0.0.0 --port 8000
+   ```
+4. Run the tests:
+   ```bash
+   uv run pytest -m mobile --run-mobile
+   # optional: APPIUM_URL=... MOBILE_BASE_URL=http://10.0.2.2:8000
+   ```
+
+Capabilities live in [`tests/mobile/capabilities.yaml`](tests/mobile/capabilities.yaml); change
+`appium:deviceName` if your emulator has a different name.
+
+## Performance (Locust)
+
+[`perf/locustfile.py`](perf/locustfile.py) simulates customers who keep a session and pause 1–3 s
+between messages, with a mix of grounded questions (6), unanswerable questions (2), order lookups
+(2) and health checks (1). Users ramp **10 → 25 → 50** over 90 seconds.
+
+Load tests use the mock model so they spend no API credits. Because the mock answers in
+microseconds, `MOCK_LATENCY_MS` adds a simulated model delay (randomised ±50%) so the app is
+measured while waiting on a slow model. Cost per query comes from the token counts in the log
+database: estimated at 4 characters ≈ 1 token, priced at $4 / $20 per million input/output tokens.
+
+```bash
+./perf/run_load_test.sh 0      # app overhead only
+./perf/run_load_test.sh 800    # simulated 800 ms model
+```
+
+| Run | Requests | Throughput | Errors | p50 | p95 | p99 | Est. cost / chat |
+|---|---|---|---|---|---|---|---|
+| [No model latency](perf/reports/mock-latency-0ms.md) | 1599 | 17.7 req/s | 0.00% | 10 ms | 17 ms | 27 ms | $0.0051 |
+| [800 ms simulated model](perf/reports/mock-latency-800ms.md) | 1111 | 12.3 req/s | 0.00% | 870 ms | 1800 ms | 2100 ms | $0.0051 |
+
+What the numbers say:
+- The app's own overhead is small: p95 is 17 ms without model latency.
+- With a slow model, latency is almost all model time. Grounded questions have p95 1200 ms, the top
+  of the simulated 400–1200 ms range.
+- **Order lookups are the slowest path:** p50 1600 ms vs 840 ms, because a tool answer needs two
+  model calls (one to request the tool, one to answer). That is the first thing to optimise.
+- These are local, single-process numbers (one uvicorn worker on a laptop) with a simulated model,
+  not production capacity figures.
 
 ---
 
@@ -259,7 +328,8 @@ evals/               golden dataset, DeepEval + Ragas suites, reports, history, 
 safety/              promptfoo red-team config, assertions, runner, reports
 postman/             collection generated from openapi.json
 tests/framework/     config, base classes, API client, OpenAPI validator, Page Objects, live server
-tests/               unit, api, web, data, conversations, tools, regression, safety, evals
+tests/               unit, api, web, mobile, data, conversations, tools, regression, safety, evals
+perf/                Locust load test, runner, reports
 scripts/             OpenAPI/Postman export, Newman runner, chat log audit
 docs/                eval methodology, regression loop
 ```
@@ -272,3 +342,6 @@ docs/                eval methodology, regression loop
   [`docs/evals.md`](docs/evals.md)). A live re-run could score slightly differently.
 - **Small dataset.** 82 cases over 7 short documents. Good for regressions, not precise estimates.
 - **Ceiling effects.** Most scores are at or near 1.0 on this clean corpus.
+- **Mobile tests not executed yet.** Written and collected, but no emulator was available.
+- **Load numbers are local and simulated.** One uvicorn worker, mock model with simulated latency,
+  token counts estimated from characters.
