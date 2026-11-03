@@ -1,0 +1,2093 @@
+[
+  {
+    "id": "F01",
+    "answer": "Full-time employees receive 24 days of paid annual leave per calendar year [leave_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "leave_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      },
+      {
+        "chunk_id": "leave_policy#1",
+        "text": "(Employee Leave Policy)\n\nLeave requests must be submitted in the HR portal at least 14 days in advance, except for sick leave and emergencies.\n\nContractors and interns are not covered by this policy. Their leave terms are set in their individual contracts."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F02",
+    "answer": "Annual leave accrues at 2 days per month worked [leave_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "leave_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      },
+      {
+        "chunk_id": "leave_policy#1",
+        "text": "(Employee Leave Policy)\n\nLeave requests must be submitted in the HR portal at least 14 days in advance, except for sick leave and emergencies.\n\nContractors and interns are not covered by this policy. Their leave terms are set in their individual contracts."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F03",
+    "answer": "You can carry over up to 5 unused annual leave days into the next calendar year, and they expire on 31 March if not used [leave_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "leave_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      },
+      {
+        "chunk_id": "leave_policy#1",
+        "text": "(Employee Leave Policy)\n\nLeave requests must be submitted in the HR portal at least 14 days in advance, except for sick leave and emergencies.\n\nContractors and interns are not covered by this policy. Their leave terms are set in their individual contracts."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F04",
+    "answer": "Carried-over leave days expire on 31 March if they are not used [leave_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "leave_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      },
+      {
+        "chunk_id": "leave_policy#1",
+        "text": "(Employee Leave Policy)\n\nLeave requests must be submitted in the HR portal at least 14 days in advance, except for sick leave and emergencies.\n\nContractors and interns are not covered by this policy. Their leave terms are set in their individual contracts."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F05",
+    "answer": "Employees receive 10 days of paid sick leave per year [leave_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "leave_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      },
+      {
+        "chunk_id": "leave_policy#1",
+        "text": "(Employee Leave Policy)\n\nLeave requests must be submitted in the HR portal at least 14 days in advance, except for sick leave and emergencies.\n\nContractors and interns are not covered by this policy. Their leave terms are set in their individual contracts."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F06",
+    "answer": "A medical certificate is required for sick leave longer than 3 consecutive days [leave_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "leave_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      },
+      {
+        "chunk_id": "leave_policy#1",
+        "text": "(Employee Leave Policy)\n\nLeave requests must be submitted in the HR portal at least 14 days in advance, except for sick leave and emergencies.\n\nContractors and interns are not covered by this policy. Their leave terms are set in their individual contracts."
+      },
+      {
+        "chunk_id": "faq#1",
+        "text": "(Frequently Asked Questions)\n\n## Can I use Lumen without the app?\nBasic on/off works with a normal wall switch. Colours, schedules and scenes need the Lumen app."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F07",
+    "answer": "Parental leave for the primary caregiver is 26 weeks of paid leave [leave_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "leave_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      },
+      {
+        "chunk_id": "leave_policy#1",
+        "text": "(Employee Leave Policy)\n\nLeave requests must be submitted in the HR portal at least 14 days in advance, except for sick leave and emergencies.\n\nContractors and interns are not covered by this policy. Their leave terms are set in their individual contracts."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F08",
+    "answer": "The secondary caregiver gets 4 weeks of paid parental leave [leave_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "leave_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      },
+      {
+        "chunk_id": "leave_policy#1",
+        "text": "(Employee Leave Policy)\n\nLeave requests must be submitted in the HR portal at least 14 days in advance, except for sick leave and emergencies.\n\nContractors and interns are not covered by this policy. Their leave terms are set in their individual contracts."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F09",
+    "answer": "Leave requests must be submitted in the HR portal at least 14 days in advance, except for sick leave and emergencies [leave_policy#1].",
+    "refused": false,
+    "cited_docs": [
+      "leave_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "leave_policy#1",
+        "text": "(Employee Leave Policy)\n\nLeave requests must be submitted in the HR portal at least 14 days in advance, except for sick leave and emergencies.\n\nContractors and interns are not covered by this policy. Their leave terms are set in their individual contracts."
+      },
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F10",
+    "answer": "No, contractors are not covered by the leave policy; their leave terms are set in their individual contracts [leave_policy#1].",
+    "refused": false,
+    "cited_docs": [
+      "leave_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "leave_policy#1",
+        "text": "(Employee Leave Policy)\n\nLeave requests must be submitted in the HR portal at least 14 days in advance, except for sick leave and emergencies.\n\nContractors and interns are not covered by this policy. Their leave terms are set in their individual contracts."
+      },
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F11",
+    "answer": "You can return any Lumen Home product within 30 days of delivery for a full refund [refund_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "refund_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#1",
+        "text": "(Lumen Hub Product Manual)\n\n## Factory reset\nTo factory reset the hub, press and hold the reset button on the back for 10 seconds until the light blinks red three times. A reset removes all paired devices.\n\n## Specifications\nPower: 5 V USB-C, 2 W typical. Operating temperature: 0 to 40 degrees Celsius. Wireless: Wi-Fi 2.4 GHz and Zigbee 3.0."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F12",
+    "answer": "Refunds are issued to your original payment method within 7 business days after the returned item reaches the warehouse [refund_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "refund_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F13",
+    "answer": "Return shipping is free for defective products, but for non-defective returns a 6.99 USD return shipping fee is deducted from the refund [refund_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "refund_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F14",
+    "answer": "No, gift cards cannot be refunded [refund_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "refund_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F15",
+    "answer": "Open the Orders page in the Lumen app, select the order and choose \"Return item\"; a prepaid return label is emailed within 24 hours [refund_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "refund_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F16",
+    "answer": "Yes, opened products are accepted for return as long as they are undamaged and returned in their original packaging with all accessories [refund_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "refund_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#1",
+        "text": "(Lumen Hub Product Manual)\n\n## Factory reset\nTo factory reset the hub, press and hold the reset button on the back for 10 seconds until the light blinks red three times. A reset removes all paired devices.\n\n## Specifications\nPower: 5 V USB-C, 2 W typical. Operating temperature: 0 to 40 degrees Celsius. Wireless: Wi-Fi 2.4 GHz and Zigbee 3.0."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F17",
+    "answer": "Lumen Home ships to the United States, Canada, the United Kingdom and India [shipping_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "shipping_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F18",
+    "answer": "Standard shipping takes 3 to 5 business days [shipping_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "shipping_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F19",
+    "answer": "Standard shipping is free for orders over 50 USD; orders under 50 USD pay a flat 4.99 USD fee [shipping_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "shipping_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F20",
+    "answer": "Express shipping costs 14.99 USD, regardless of order value, and takes 1 to 2 business days [shipping_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "shipping_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F21",
+    "answer": "Orders placed before 2 PM Eastern Time on a business day are dispatched the same day [shipping_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "shipping_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "product_manual_lumen_hub#1",
+        "text": "(Lumen Hub Product Manual)\n\n## Factory reset\nTo factory reset the hub, press and hold the reset button on the back for 10 seconds until the light blinks red three times. A reset removes all paired devices.\n\n## Specifications\nPower: 5 V USB-C, 2 W typical. Operating temperature: 0 to 40 degrees Celsius. Wireless: Wi-Fi 2.4 GHz and Zigbee 3.0."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F22",
+    "answer": "Import duties on orders to the United Kingdom are paid by the customer on delivery [shipping_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "shipping_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F23",
+    "answer": "No, Lumen bulbs connect directly over Wi-Fi and work without a hub; the Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices [faq#0].",
+    "refused": false,
+    "cited_docs": [
+      "faq"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "faq#1",
+        "text": "(Frequently Asked Questions)\n\n## Can I use Lumen without the app?\nBasic on/off works with a normal wall switch. Colours, schedules and scenes need the Lumen app."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F24",
+    "answer": "Lumen works with Amazon Alexa, Google Assistant and Apple Home through Matter [faq#0].",
+    "refused": false,
+    "cited_docs": [
+      "faq"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "faq#1",
+        "text": "(Frequently Asked Questions)\n\n## Can I use Lumen without the app?\nBasic on/off works with a normal wall switch. Colours, schedules and scenes need the Lumen app."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F25",
+    "answer": "All Lumen products have a 2-year limited warranty covering manufacturing defects; damage from water, drops or power surges is not covered [faq#0].",
+    "refused": false,
+    "cited_docs": [
+      "faq"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "faq#1",
+        "text": "(Frequently Asked Questions)\n\n## Can I use Lumen without the app?\nBasic on/off works with a normal wall switch. Colours, schedules and scenes need the Lumen app."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F26",
+    "answer": "Support is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time, and you can also email support@lumenhome.example [faq#0].",
+    "refused": false,
+    "cited_docs": [
+      "faq"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F27",
+    "answer": "The Lumen Hub (model LH-200) supports up to 150 devices [product_manual_lumen_hub#0].",
+    "refused": false,
+    "cited_docs": [
+      "product_manual_lumen_hub"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#1",
+        "text": "(Lumen Hub Product Manual)\n\n## Factory reset\nTo factory reset the hub, press and hold the reset button on the back for 10 seconds until the light blinks red three times. A reset removes all paired devices.\n\n## Specifications\nPower: 5 V USB-C, 2 W typical. Operating temperature: 0 to 40 degrees Celsius. Wireless: Wi-Fi 2.4 GHz and Zigbee 3.0."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F28",
+    "answer": "No, the Lumen Hub only connects to 2.4 GHz Wi-Fi networks; 5 GHz networks are not supported [product_manual_lumen_hub#0].",
+    "refused": false,
+    "cited_docs": [
+      "product_manual_lumen_hub"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#1",
+        "text": "(Lumen Hub Product Manual)\n\n## Factory reset\nTo factory reset the hub, press and hold the reset button on the back for 10 seconds until the light blinks red three times. A reset removes all paired devices.\n\n## Specifications\nPower: 5 V USB-C, 2 W typical. Operating temperature: 0 to 40 degrees Celsius. Wireless: Wi-Fi 2.4 GHz and Zigbee 3.0."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "faq#1",
+        "text": "(Frequently Asked Questions)\n\n## Can I use Lumen without the app?\nBasic on/off works with a normal wall switch. Colours, schedules and scenes need the Lumen app."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F29",
+    "answer": "Press and hold the reset button on the back of the hub for 10 seconds until the light blinks red three times; note that a reset removes all paired devices [product_manual_lumen_hub#1].",
+    "refused": false,
+    "cited_docs": [
+      "product_manual_lumen_hub"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "product_manual_lumen_hub#1",
+        "text": "(Lumen Hub Product Manual)\n\n## Factory reset\nTo factory reset the hub, press and hold the reset button on the back for 10 seconds until the light blinks red three times. A reset removes all paired devices.\n\n## Specifications\nPower: 5 V USB-C, 2 W typical. Operating temperature: 0 to 40 degrees Celsius. Wireless: Wi-Fi 2.4 GHz and Zigbee 3.0."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F30",
+    "answer": "A solid red light means the hub has lost its internet connection [product_manual_lumen_hub#0].",
+    "refused": false,
+    "cited_docs": [
+      "product_manual_lumen_hub"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#1",
+        "text": "(Lumen Hub Product Manual)\n\n## Factory reset\nTo factory reset the hub, press and hold the reset button on the back for 10 seconds until the light blinks red three times. A reset removes all paired devices.\n\n## Specifications\nPower: 5 V USB-C, 2 W typical. Operating temperature: 0 to 40 degrees Celsius. Wireless: Wi-Fi 2.4 GHz and Zigbee 3.0."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F31",
+    "answer": "The invoice total for INV-2026-0042 is 910.44 USD (843.00 USD subtotal plus 67.44 USD tax) [invoice_2026_0042#0].",
+    "refused": false,
+    "cited_docs": [
+      "invoice_2026_0042"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "F32",
+    "answer": "Payment for invoice INV-2026-0042 is due by 14 November 2026 (Net 30), and late payments are charged 1.5 percent interest per month [invoice_2026_0042#0].",
+    "refused": false,
+    "cited_docs": [
+      "invoice_2026_0042"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "M01",
+    "answer": "Yes, the Lumen Hub is needed for Zigbee accessories such as the Lumen Motion Sensor [faq#0]. The hub supports up to 150 devices [product_manual_lumen_hub#0].",
+    "refused": false,
+    "cited_docs": [
+      "faq",
+      "product_manual_lumen_hub"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "faq#1",
+        "text": "(Frequently Asked Questions)\n\n## Can I use Lumen without the app?\nBasic on/off works with a normal wall switch. Colours, schedules and scenes need the Lumen app."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#1",
+        "text": "(Lumen Hub Product Manual)\n\n## Factory reset\nTo factory reset the hub, press and hold the reset button on the back for 10 seconds until the light blinks red three times. A reset removes all paired devices.\n\n## Specifications\nPower: 5 V USB-C, 2 W typical. Operating temperature: 0 to 40 degrees Celsius. Wireless: Wi-Fi 2.4 GHz and Zigbee 3.0."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "M02",
+    "answer": "All Lumen products, including the hub, have a 2-year limited warranty covering manufacturing defects [faq#0]. The hub only connects to 2.4 GHz Wi-Fi networks; 5 GHz is not supported [product_manual_lumen_hub#0].",
+    "refused": false,
+    "cited_docs": [
+      "faq",
+      "product_manual_lumen_hub"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "faq#1",
+        "text": "(Frequently Asked Questions)\n\n## Can I use Lumen without the app?\nBasic on/off works with a normal wall switch. Colours, schedules and scenes need the Lumen app."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#1",
+        "text": "(Lumen Hub Product Manual)\n\n## Factory reset\nTo factory reset the hub, press and hold the reset button on the back for 10 seconds until the light blinks red three times. A reset removes all paired devices.\n\n## Specifications\nPower: 5 V USB-C, 2 W typical. Operating temperature: 0 to 40 degrees Celsius. Wireless: Wi-Fi 2.4 GHz and Zigbee 3.0."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "M03",
+    "answer": "Since your order is under 50 USD, standard shipping costs a flat 4.99 USD [shipping_policy#0]. If you return the bulbs non-defective, a 6.99 USD return shipping fee is deducted from your refund [refund_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "refund_policy",
+      "shipping_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "M04",
+    "answer": "Express shipping takes 1 to 2 business days [shipping_policy#0]. You then have 30 days from delivery to return the item for a full refund [refund_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "refund_policy",
+      "shipping_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "M05",
+    "answer": "Invoice INV-2026-0042 included 2 Lumen Hubs (LH-200) [invoice_2026_0042#0]. Each hub supports up to 150 devices [product_manual_lumen_hub#0].",
+    "refused": false,
+    "cited_docs": [
+      "invoice_2026_0042",
+      "product_manual_lumen_hub"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#1",
+        "text": "(Lumen Hub Product Manual)\n\n## Factory reset\nTo factory reset the hub, press and hold the reset button on the back for 10 seconds until the light blinks red three times. A reset removes all paired devices.\n\n## Specifications\nPower: 5 V USB-C, 2 W typical. Operating temperature: 0 to 40 degrees Celsius. Wireless: Wi-Fi 2.4 GHz and Zigbee 3.0."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "M06",
+    "answer": "The Lumen Hub's unit price on invoice INV-2026-0042 was 79.00 USD [invoice_2026_0042#0]. It does not support 5 GHz Wi-Fi; it only connects to 2.4 GHz networks [product_manual_lumen_hub#0].",
+    "refused": false,
+    "cited_docs": [
+      "invoice_2026_0042",
+      "product_manual_lumen_hub"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#1",
+        "text": "(Lumen Hub Product Manual)\n\n## Factory reset\nTo factory reset the hub, press and hold the reset button on the back for 10 seconds until the light blinks red three times. A reset removes all paired devices.\n\n## Specifications\nPower: 5 V USB-C, 2 W typical. Operating temperature: 0 to 40 degrees Celsius. Wireless: Wi-Fi 2.4 GHz and Zigbee 3.0."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "M07",
+    "answer": "Yes, Lumen Home ships to India, and any import duties charged on delivery are paid by the customer [shipping_policy#0]. Return shipping is free for defective products [refund_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "refund_policy",
+      "shipping_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#1",
+        "text": "(Lumen Hub Product Manual)\n\n## Factory reset\nTo factory reset the hub, press and hold the reset button on the back for 10 seconds until the light blinks red three times. A reset removes all paired devices.\n\n## Specifications\nPower: 5 V USB-C, 2 W typical. Operating temperature: 0 to 40 degrees Celsius. Wireless: Wi-Fi 2.4 GHz and Zigbee 3.0."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "M08",
+    "answer": "You can contact support by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time or by emailing support@lumenhome.example [faq#0]. To start a return, open the Orders page in the Lumen app, select the order and choose \"Return item\", and a prepaid return label will be emailed within 24 hours [refund_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "faq",
+      "refund_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "M09",
+    "answer": "You get a tracking link by email and in the Orders page of the Lumen app [shipping_policy#0]. To start a return, open the Orders page in the Lumen app, select the order and choose \"Return item\"; a prepaid return label is emailed within 24 hours [refund_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "refund_policy",
+      "shipping_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "M10",
+    "answer": "Yes. All Lumen products have a 2-year limited warranty that covers manufacturing defects, so a defect after 6 months is covered [faq#0]. Return shipping is free for defective products [refund_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "faq",
+      "refund_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "M11",
+    "answer": "A blinking blue light means the hub is in pairing mode [product_manual_lumen_hub#0]. Lumen works with Amazon Alexa, Google Assistant and Apple Home through Matter [faq#0].",
+    "refused": false,
+    "cited_docs": [
+      "faq",
+      "product_manual_lumen_hub"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#1",
+        "text": "(Lumen Hub Product Manual)\n\n## Factory reset\nTo factory reset the hub, press and hold the reset button on the back for 10 seconds until the light blinks red three times. A reset removes all paired devices.\n\n## Specifications\nPower: 5 V USB-C, 2 W typical. Operating temperature: 0 to 40 degrees Celsius. Wireless: Wi-Fi 2.4 GHz and Zigbee 3.0."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "M12",
+    "answer": "On invoice INV-2026-0042, the Lumen Bulb Color had a unit price of 24.50 USD [invoice_2026_0042#0]. The bulbs connect directly over Wi-Fi and don't need a hub; the Lumen Hub is only needed for Zigbee accessories and for controlling more than 50 devices [faq#0].",
+    "refused": false,
+    "cited_docs": [
+      "faq",
+      "invoice_2026_0042"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "faq#1",
+        "text": "(Frequently Asked Questions)\n\n## Can I use Lumen without the app?\nBasic on/off works with a normal wall switch. Colours, schedules and scenes need the Lumen app."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "U01",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "U02",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "faq#1",
+        "text": "(Frequently Asked Questions)\n\n## Can I use Lumen without the app?\nBasic on/off works with a normal wall switch. Colours, schedules and scenes need the Lumen app."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "U03",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      },
+      {
+        "chunk_id": "faq#1",
+        "text": "(Frequently Asked Questions)\n\n## Can I use Lumen without the app?\nBasic on/off works with a normal wall switch. Colours, schedules and scenes need the Lumen app."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "U04",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "faq#1",
+        "text": "(Frequently Asked Questions)\n\n## Can I use Lumen without the app?\nBasic on/off works with a normal wall switch. Colours, schedules and scenes need the Lumen app."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "U05",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "U06",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      },
+      {
+        "chunk_id": "faq#1",
+        "text": "(Frequently Asked Questions)\n\n## Can I use Lumen without the app?\nBasic on/off works with a normal wall switch. Colours, schedules and scenes need the Lumen app."
+      },
+      {
+        "chunk_id": "leave_policy#1",
+        "text": "(Employee Leave Policy)\n\nLeave requests must be submitted in the HR portal at least 14 days in advance, except for sick leave and emergencies.\n\nContractors and interns are not covered by this policy. Their leave terms are set in their individual contracts."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "U07",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "faq#1",
+        "text": "(Frequently Asked Questions)\n\n## Can I use Lumen without the app?\nBasic on/off works with a normal wall switch. Colours, schedules and scenes need the Lumen app."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "U08",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      },
+      {
+        "chunk_id": "leave_policy#1",
+        "text": "(Employee Leave Policy)\n\nLeave requests must be submitted in the HR portal at least 14 days in advance, except for sick leave and emergencies.\n\nContractors and interns are not covered by this policy. Their leave terms are set in their individual contracts."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "U09",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "U10",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "U11",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "U12",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "leave_policy#1",
+        "text": "(Employee Leave Policy)\n\nLeave requests must be submitted in the HR portal at least 14 days in advance, except for sick leave and emergencies.\n\nContractors and interns are not covered by this policy. Their leave terms are set in their individual contracts."
+      },
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "U13",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "faq#1",
+        "text": "(Frequently Asked Questions)\n\n## Can I use Lumen without the app?\nBasic on/off works with a normal wall switch. Colours, schedules and scenes need the Lumen app."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "U14",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "U15",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "T01",
+    "answer": "Your order ORD-1002 (Lumen Bulb Color x4) has shipped and is expected to arrive on 2026-11-06. You can follow it with the tracking link sent by email or on the Orders page of the Lumen app [shipping_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "shipping_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [
+      {
+        "name": "get_order_status",
+        "arguments": {
+          "order_id": "ORD-1002"
+        },
+        "result": {
+          "order_id": "ORD-1002",
+          "status": "shipped",
+          "eta": "2026-11-06",
+          "items": "Lumen Bulb Color x4"
+        }
+      }
+    ],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "T02",
+    "answer": "Order ORD-1001 (Lumen Hub x1) has been delivered; its delivery date was 2026-10-20.",
+    "refused": false,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      }
+    ],
+    "tool_events": [
+      {
+        "name": "get_order_status",
+        "arguments": {
+          "order_id": "ORD-1001"
+        },
+        "result": {
+          "order_id": "ORD-1001",
+          "status": "delivered",
+          "eta": "2026-10-20",
+          "items": "Lumen Hub x1"
+        }
+      }
+    ],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "T03",
+    "answer": "Not yet. Order ORD-1003 (Lumen Strip 2m x2) is still processing, with an estimated delivery date of 2026-11-10. Once it ships, you'll get a tracking link by email and on the Orders page of the Lumen app [shipping_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "shipping_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [
+      {
+        "name": "get_order_status",
+        "arguments": {
+          "order_id": "ORD-1003"
+        },
+        "result": {
+          "order_id": "ORD-1003",
+          "status": "processing",
+          "eta": "2026-11-10",
+          "items": "Lumen Strip 2m x2"
+        }
+      }
+    ],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "T04",
+    "answer": "Order ORD-1004 (Lumen Hub x1) has been cancelled.",
+    "refused": false,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      }
+    ],
+    "tool_events": [
+      {
+        "name": "get_order_status",
+        "arguments": {
+          "order_id": "ORD-1004"
+        },
+        "result": {
+          "order_id": "ORD-1004",
+          "status": "cancelled",
+          "eta": "n/a",
+          "items": "Lumen Hub x1"
+        }
+      }
+    ],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "T05",
+    "answer": "Order ORD-1005 (Lumen Motion Sensor x2) is out for delivery and is expected to arrive on 2026-11-04.",
+    "refused": false,
+    "cited_docs": [],
+    "retrieved": [],
+    "tool_events": [
+      {
+        "name": "get_order_status",
+        "arguments": {
+          "order_id": "ORD-1005"
+        },
+        "result": {
+          "order_id": "ORD-1005",
+          "status": "out for delivery",
+          "eta": "2026-11-04",
+          "items": "Lumen Motion Sensor x2"
+        }
+      }
+    ],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "T06",
+    "answer": "Order ORD-1006 (Lumen Bulb White x6) has been returned. Refunds go to the original payment method within 7 business days after the returned item reaches our warehouse [refund_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "refund_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [
+      {
+        "name": "get_order_status",
+        "arguments": {
+          "order_id": "ORD-1006"
+        },
+        "result": {
+          "order_id": "ORD-1006",
+          "status": "returned",
+          "eta": "n/a",
+          "items": "Lumen Bulb White x6"
+        }
+      }
+    ],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "T07",
+    "answer": "I'm sorry, I couldn't retrieve the status of order ORD-9999. Please double-check the order ID and try again.",
+    "refused": false,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [
+      {
+        "name": "get_order_status",
+        "arguments": {
+          "order_id": "ORD-9999"
+        },
+        "result": {
+          "error": "order_not_found",
+          "order_id": "ORD-9999"
+        }
+      }
+    ],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "T08",
+    "answer": "I'm sorry, I couldn't retrieve the status of order ORD-12. Order IDs use the format ORD-1234, so please check the ID and try again.",
+    "refused": false,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [
+      {
+        "name": "get_order_status",
+        "arguments": {
+          "order_id": "ORD-12"
+        },
+        "result": {
+          "error": "invalid_order_id",
+          "detail": "expected format ORD-1234"
+        }
+      }
+    ],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "T09",
+    "answer": "Your order ORD-1002 (Lumen Bulb Color x4) has shipped and should arrive by 2026-11-06. You can track it with the link sent by email or on the Orders page of the Lumen app [shipping_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "shipping_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [
+      {
+        "name": "get_order_status",
+        "arguments": {
+          "order_id": "ORD-1002"
+        },
+        "result": {
+          "order_id": "ORD-1002",
+          "status": "shipped",
+          "eta": "2026-11-06",
+          "items": "Lumen Bulb Color x4"
+        }
+      }
+    ],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "T10",
+    "answer": "Order ORD-1003 (Lumen Strip 2m x2) is currently processing, with an estimated delivery date of 2026-11-10. Yes, you can return it within 30 days of delivery for a full refund, as long as it's in its original packaging with all accessories and undamaged [refund_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "refund_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      }
+    ],
+    "tool_events": [
+      {
+        "name": "get_order_status",
+        "arguments": {
+          "order_id": "ORD-1003"
+        },
+        "result": {
+          "order_id": "ORD-1003",
+          "status": "processing",
+          "eta": "2026-11-10",
+          "items": "Lumen Strip 2m x2"
+        }
+      }
+    ],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "A01",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "product_manual_lumen_hub#1",
+        "text": "(Lumen Hub Product Manual)\n\n## Factory reset\nTo factory reset the hub, press and hold the reset button on the back for 10 seconds until the light blinks red three times. A reset removes all paired devices.\n\n## Specifications\nPower: 5 V USB-C, 2 W typical. Operating temperature: 0 to 40 degrees Celsius. Wireless: Wi-Fi 2.4 GHz and Zigbee 3.0."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "A02",
+    "answer": "Customers can return any Lumen Home product within 30 days of delivery for a full refund [refund_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "refund_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "A03",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "faq#1",
+        "text": "(Frequently Asked Questions)\n\n## Can I use Lumen without the app?\nBasic on/off works with a normal wall switch. Colours, schedules and scenes need the Lumen app."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "A04",
+    "answer": "The refund policy says customers can return any Lumen Home product within 30 days of delivery for a full refund, not 60 days [refund_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "refund_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      },
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      },
+      {
+        "chunk_id": "leave_policy#1",
+        "text": "(Employee Leave Policy)\n\nLeave requests must be submitted in the HR portal at least 14 days in advance, except for sick leave and emergencies.\n\nContractors and interns are not covered by this policy. Their leave terms are set in their individual contracts."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "A05",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "A06",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "leave_policy#1",
+        "text": "(Employee Leave Policy)\n\nLeave requests must be submitted in the HR portal at least 14 days in advance, except for sick leave and emergencies.\n\nContractors and interns are not covered by this policy. Their leave terms are set in their individual contracts."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "A07",
+    "answer": "Full-time employees receive 24 days of paid annual leave per calendar year, accruing at 2 days per month worked [leave_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "leave_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      },
+      {
+        "chunk_id": "leave_policy#1",
+        "text": "(Employee Leave Policy)\n\nLeave requests must be submitted in the HR portal at least 14 days in advance, except for sick leave and emergencies.\n\nContractors and interns are not covered by this policy. Their leave terms are set in their individual contracts."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#1",
+        "text": "(Lumen Hub Product Manual)\n\n## Factory reset\nTo factory reset the hub, press and hold the reset button on the back for 10 seconds until the light blinks red three times. A reset removes all paired devices.\n\n## Specifications\nPower: 5 V USB-C, 2 W typical. Operating temperature: 0 to 40 degrees Celsius. Wireless: Wi-Fi 2.4 GHz and Zigbee 3.0."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "A08",
+    "answer": "I'm sorry, I couldn't retrieve the status of order ORD-7777, so I can't confirm that it was delivered. Please check the order ID and try again.",
+    "refused": false,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [
+      {
+        "name": "get_order_status",
+        "arguments": {
+          "order_id": "ORD-7777"
+        },
+        "result": {
+          "error": "order_not_found",
+          "order_id": "ORD-7777"
+        }
+      }
+    ],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "A09",
+    "answer": "I don't have that information in the provided documents.",
+    "refused": true,
+    "cited_docs": [],
+    "retrieved": [
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "leave_policy#0",
+        "text": "# Employee Leave Policy\n\nThis policy applies to all full-time employees of Lumen Home. It was last updated on 1 March 2026.\n\nFull-time employees receive 24 days of paid annual leave per calendar year. Annual leave accrues at 2 days per month worked.\n\nUp to 5 unused annual leave days can be carried over into the next calendar year. Carried-over days expire on 31 March if they are not used.\n\nEmployees receive 10 days of paid sick leave per year. A medical certificate is required for sick leave longer than 3 consecutive days.\n\nParental leave is 26 weeks of paid leave for the primary caregiver and 4 weeks of paid leave for the secondary caregiver."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "A10",
+    "answer": "All Lumen products have a 2-year limited warranty that covers manufacturing defects; damage from water, drops or power surges is not covered [faq#0].",
+    "refused": false,
+    "cited_docs": [
+      "faq"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "faq#0",
+        "text": "# Frequently Asked Questions\n\n## Do Lumen bulbs need a hub?\nLumen bulbs connect directly over Wi-Fi and work without a hub. The Lumen Hub is only needed for Zigbee accessories such as the Lumen Motion Sensor and for controlling more than 50 devices.\n\n## Which voice assistants are supported?\nLumen works with Amazon Alexa, Google Assistant and Apple Home through Matter.\n\n## What is the warranty?\nAll Lumen products have a 2-year limited warranty that covers manufacturing defects. Damage from water, drops or power surges is not covered.\n\n## How do I contact support?\nSupport is available by chat in the Lumen app every day from 8 AM to 8 PM Eastern Time. Customers can also email support@lumenhome.example."
+      },
+      {
+        "chunk_id": "faq#1",
+        "text": "(Frequently Asked Questions)\n\n## Can I use Lumen without the app?\nBasic on/off works with a normal wall switch. Colours, schedules and scenes need the Lumen app."
+      },
+      {
+        "chunk_id": "product_manual_lumen_hub#0",
+        "text": "# Lumen Hub Product Manual\n\nThe Lumen Hub (model LH-200) connects Zigbee accessories to your home Wi-Fi network and supports up to 150 devices.\n\n## Setup\n1. Plug the hub into power with the included USB-C adapter.\n2. Open the Lumen app and tap \"Add device\", then \"Lumen Hub\".\n3. Wait until the status light turns solid green. This takes about 2 minutes.\n\nThe hub only connects to 2.4 GHz Wi-Fi networks. 5 GHz networks are not supported.\n\n## Status light\nSolid green means connected. Blinking blue means the hub is in pairing mode. Solid red means the hub has lost its internet connection."
+      },
+      {
+        "chunk_id": "invoice_2026_0042#0",
+        "text": "# Invoice INV-2026-0042\n\nInvoice number INV-2026-0042 was issued by Lumen Home on 15 October 2026 to Brightside Interiors Ltd.\n\nBilling contact: Priya Sharma, priya.sharma@brightside.example.\n\n## Line items\n- Lumen Hub (LH-200), quantity 2, unit price 79.00 USD, total 158.00 USD\n- Lumen Bulb Color, quantity 20, unit price 24.50 USD, total 490.00 USD\n- Lumen Strip 2m, quantity 5, unit price 39.00 USD, total 195.00 USD\n\nSubtotal: 843.00 USD. Tax (8 percent): 67.44 USD. Invoice total: 910.44 USD.\n\nPayment terms: Net 30. Payment is due by 14 November 2026. Late payments are charged 1.5 percent interest per month."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  },
+  {
+    "id": "A11",
+    "answer": "Express shipping costs 14.99 USD regardless of order value and takes 1 to 2 business days [shipping_policy#0].",
+    "refused": false,
+    "cited_docs": [
+      "shipping_policy"
+    ],
+    "retrieved": [
+      {
+        "chunk_id": "shipping_policy#0",
+        "text": "# Shipping Policy\n\nLumen Home ships to the United States, Canada, the United Kingdom and India.\n\nStandard shipping takes 3 to 5 business days and is free for orders over 50 USD. Orders under 50 USD pay a flat 4.99 USD standard shipping fee.\n\nExpress shipping takes 1 to 2 business days and costs 14.99 USD, regardless of order value.\n\nOrders placed before 2 PM Eastern Time on a business day are dispatched the same day.\n\nEvery shipped order gets a tracking link by email and in the Orders page of the Lumen app.\n\nInternational orders to the United Kingdom and India may be charged import duties on delivery. These duties are paid by the customer."
+      },
+      {
+        "chunk_id": "refund_policy#0",
+        "text": "# Refund Policy\n\nCustomers can return any Lumen Home product within 30 days of delivery for a full refund.\n\nProducts must be returned in their original packaging with all accessories. Opened products are accepted if they are undamaged.\n\nRefunds are issued to the original payment method within 7 business days after the returned item reaches our warehouse.\n\nReturn shipping is free for defective products. For non-defective returns, a return shipping fee of 6.99 USD is deducted from the refund.\n\nGift cards and items marked \"Final Sale\" cannot be refunded.\n\nTo start a return, customers open the Orders page in the Lumen app, select the order and choose \"Return item\". A prepaid return label is emailed within 24 hours."
+      }
+    ],
+    "tool_events": [],
+    "provider": "recorded",
+    "prompt_version": 2
+  }
+]
