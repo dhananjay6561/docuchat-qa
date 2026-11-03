@@ -19,6 +19,14 @@ dev = [
     "pytest>=8.3",
     "ruff>=0.7",
 ]
+evals = [
+    "deepeval>=4.3.2",
+    "langchain<1",
+    "langchain-community<0.4",
+    "langchain-core<1",
+    "langchain-openai<1",
+    "ragas>=0.4.3",
+]
 
 [tool.uv]
 # This is an application, not a library, so uv doesn't need to build/install it.
