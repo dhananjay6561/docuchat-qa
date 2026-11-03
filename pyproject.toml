@@ -73,3 +73,4 @@ select = ["E", "F", "I", "B", "UP"]
 [tool.ruff.lint.per-file-ignores]
 # Embedded Postman (JavaScript) test snippets read better on one line each.
 "scripts/export_postman.py" = ["E501"]
+"perf/summarize.py" = ["E501"]  # markdown table rows
