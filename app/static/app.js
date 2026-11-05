@@ -83,6 +83,8 @@ form.addEventListener("submit", async (event) => {
     addAssistantMessage(await response.json());
   } catch (err) {
     showError(`Something went wrong: ${err.message}. Please try again.`);
+    // Give the message back so a retry is one click, unless they've already started typing.
+    if (!input.value) input.value = message;
   } finally {
     send.disabled = false;
     loading.hidden = true;
